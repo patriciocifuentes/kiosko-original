@@ -1,0 +1,170 @@
+
+
+
+<div>
+    <div class="header">
+        <div class="top">
+          <img class="backIcon" src="./assets/icon/png/backIcon.png" alt="" srcset="">
+          <span class="admin">Pago</span>
+        </div>
+      </div>
+      <div class='content tabs'>
+        <ul>
+          <div class="content_check_1">
+            <div class="up">
+              <div class="discounts">
+                <button class="btn_discount">Descuentos</button>
+              </div>
+              <div class="client_name">
+                  <input type="text" class="text_name" placeholder="Nombre">
+                  <img class="addIcon" src="./assets/icon/png/addIcon.png" alt="" srcset="">
+                  <ion-icon class="dumpIcon" [src]=dumpIcon></ion-icon>
+                  <!-- <img class="dumpIcon" src="./assets/icon/png/backIcon.png" alt="" srcset=""> -->
+              </div>
+              <div class="to_go"><p>Para llevar</p><input type="checkbox" id="switch"/>
+                <label for="switch"></label></div>
+              <div (click)="openAddModal()" class="express">
+                <img class="addCircleIcon" src="./assets/icon/png/addCircle.png" alt="" srcset="">
+                <label class="text_express">Express</label>
+              </div> 
+            </div>
+      
+            <div class="mid">
+                <div class="mid-inside">
+                    <div class="grid-container">
+                    <div id="delete_product" class="delete_product">
+                      <img class="deleteIcon" src="./assets/icon/png/deleteIcon.png" alt="" srcset="">
+                    </div>
+                    <div id="product_name_instruction" class="product_name_instruction"><p id="product_name" class="product_name">Producto</p><p id="product_instruction" class="product_instruction">Instrucción</p> </div>
+                    <div id="edit" class="edit">
+                      <img class="editIcon" src="./assets/icon/png/editIcon.png" alt="" srcset="">
+                    </div>
+                    <div id= circle class="circle"><div class="circle_new"></div></div>
+                    <div id=counter class="counter"><p id="minus"class="plus_minus">-</p><input type="number" class="number" placeholder="1"><p id="plus"class="plus_minus">+</p></div>
+                    <div id="amount" class="amount">¢00.00</div>
+                  </div>
+                  <div class="grid-container">
+                    <div id="delete_product" class="delete_product"><ion-icon class="deleteIcon" [src]=deleteIcon></ion-icon></div>
+                    <div id="product_name_instruction" class="product_name_instruction"><p id="product_name" class="product_name">Producto</p><p id="product_instruction" class="product_instruction">Instrucción</p> </div>
+                    <div id="edit" class="edit"><ion-icon class="editIcon" [src]=editIcon></ion-icon></div>
+                    <div id= circle class="circle"><div class="circle_new"></div></div>
+                    <div id=counter class="counter"><p id="minus"class="plus_minus">-</p><input type="number" class="number" placeholder="1"><p id="plus"class="plus_minus">+</p></div>
+                    <div id="amount" class="amount">¢00.00</div>
+                  </div>
+                  <div class="grid-container">
+                    <div id="delete_product" class="delete_product"><ion-icon class="deleteIcon" [src]=deleteIcon></ion-icon></div>
+                    <div id="product_name_instruction" class="product_name_instruction"><p id="product_name" class="product_name">Producto</p><p id="product_instruction" class="product_instruction">Instrucción</p> </div>
+                    <div id="edit" class="edit"><ion-icon class="editIcon" [src]=editIcon></ion-icon></div>
+                    <div id= circle class="circle"><div class="circle_new"></div></div>
+                    <div id=counter class="counter"><p id="minus"class="plus_minus">-</p><input type="number" class="number" placeholder="1"><p id="plus"class="plus_minus">+</p></div>
+                    <div id="amount" class="amount">¢00.00</div>
+                  </div>
+                  <div class="grid-container">
+                    <div id="delete_product" class="delete_product"><ion-icon class="deleteIcon" [src]=deleteIcon></ion-icon></div>
+                    <div id="product_name_instruction" class="product_name_instruction"><p id="product_name" class="product_name">Producto</p><p id="product_instruction" class="product_instruction">Instrucción</p> </div>
+                    <div id="edit" class="edit"><ion-icon class="editIcon" [src]=editIcon></ion-icon></div>
+                    <div id= circle class="circle"><div class="circle_new"></div></div>
+                    <div id=counter class="counter"><p id="minus"class="plus_minus">-</p><input type="number" class="number" placeholder="1"><p id="plus"class="plus_minus">+</p></div>
+                    <div id="amount" class="amount">¢00.00</div>
+                  </div>
+                  <div class="grid-container">
+                    <div id="delete_product" class="delete_product"><ion-icon class="deleteIcon" [src]=deleteIcon></ion-icon></div>
+                    <div id="product_name_instruction" class="product_name_instruction"><p id="product_name" class="product_name">Producto</p><p id="product_instruction" class="product_instruction">Instrucción</p> </div>
+                    <div id="edit" class="edit"><ion-icon class="editIcon" [src]=editIcon></ion-icon></div>
+                    <div id= circle class="circle"><div class="circle_new"></div></div>
+                    <div id=counter class="counter"><p id="minus"class="plus_minus">-</p><input type="number" class="number" placeholder="1"><p id="plus"class="plus_minus">+</p></div>
+                    <div id="amount" class="amount">¢00.00</div>
+                  </div>
+                  <div class="grid-container">
+                    <div id="delete_product" class="delete_product"><ion-icon class="deleteIcon" [src]=deleteIcon></ion-icon></div>
+                    <div id="product_name_instruction" class="product_name_instruction"><p id="product_name" class="product_name">Producto</p><p id="product_instruction" class="product_instruction">Instrucción</p> </div>
+                    <div id="edit" class="edit"><ion-icon class="editIcon" [src]=editIcon></ion-icon></div>
+                    <div id= circle class="circle"><div class="circle_new"></div></div>
+                    <div id=counter class="counter"><p id="minus"class="plus_minus">-</p><input type="number" class="number" placeholder="1"><p id="plus"class="plus_minus">+</p></div>
+                    <div id="amount" class="amount">¢00.00</div>
+                  </div>
+                  <div class="grid-container">
+                    <div id="delete_product" class="delete_product"><ion-icon class="deleteIcon" [src]=deleteIcon></ion-icon></div>
+                    <div id="product_name_instruction" class="product_name_instruction"><p id="product_name" class="product_name">Producto</p><p id="product_instruction" class="product_instruction">Instrucción</p> </div>
+                    <div id="edit" class="edit"><ion-icon class="editIcon" [src]=editIcon></ion-icon></div>
+                    <div id= circle class="circle"><div class="circle_new"></div></div>
+                    <div id=counter class="counter"><p id="minus"class="plus_minus">-</p><input type="number" class="number" placeholder="1"><p id="plus"class="plus_minus">+</p></div>
+                    <div id="amount" class="amount">¢00.00</div>
+                  </div>
+                  <div class="grid-container">
+                    <div id="delete_product" class="delete_product"><ion-icon class="deleteIcon" [src]=deleteIcon></ion-icon></div>
+                    <div id="product_name_instruction" class="product_name_instruction"><p id="product_name" class="product_name">Producto</p><p id="product_instruction" class="product_instruction">Instrucción</p> </div>
+                    <div id="edit" class="edit"><ion-icon class="editIcon" [src]=editIcon></ion-icon></div>
+                    <div id= circle class="circle"><div class="circle_new"></div></div>
+                    <div id=counter class="counter"><p id="minus"class="plus_minus">-</p><input type="number" class="number" placeholder="1"><p id="plus"class="plus_minus">+</p></div>
+                    <div id="amount" class="amount">¢00.00</div>
+                  </div>
+                  <div class="grid-container">
+                    <div id="delete_product" class="delete_product"><ion-icon class="deleteIcon" [src]=deleteIcon></ion-icon></div>
+                    <div id="product_name_instruction" class="product_name_instruction"><p id="product_name" class="product_name">Producto</p><p id="product_instruction" class="product_instruction">Instrucción</p> </div>
+                    <div id="edit" class="edit"><ion-icon class="editIcon" [src]=editIcon></ion-icon></div>
+                    <div id= circle class="circle"><div class="circle_new"></div></div>
+                    <div id=counter class="counter"><p id="minus"class="plus_minus">-</p><input type="number" class="number" placeholder="1"><p id="plus"class="plus_minus">+</p></div>
+                    <div id="amount" class="amount">¢00.00</div>
+                  </div>
+                  <div class="grid-container">
+                    <div id="delete_product" class="delete_product"><ion-icon class="deleteIcon" [src]=deleteIcon></ion-icon></div>
+                    <div id="product_name_instruction" class="product_name_instruction"><p id="product_name" class="product_name">Producto</p><p id="product_instruction" class="product_instruction">Instrucción</p> </div>
+                    <div id="edit" class="edit"><ion-icon class="editIcon" [src]=editIcon></ion-icon></div>
+                    <div id= circle class="circle"><div class="circle_new"></div></div>
+                    <div id=counter class="counter"><p id="minus"class="plus_minus">-</p><input type="number" class="number" placeholder="1"><p id="plus"class="plus_minus">+</p></div>
+                    <div id="amount" class="amount">¢00.00</div>
+                  </div>
+                  <div class="grid-container">
+                    <div id="delete_product" class="delete_product"><ion-icon class="deleteIcon" [src]=deleteIcon></ion-icon></div>
+                    <div id="product_name_instruction" class="product_name_instruction"><p id="product_name" class="product_name">Producto</p><p id="product_instruction" class="product_instruction">Instrucción</p> </div>
+                    <div id="edit" class="edit"><ion-icon class="editIcon" [src]=editIcon></ion-icon></div>
+                    <div id= circle class="circle"><div class="circle_new"></div></div>
+                    <div id=counter class="counter"><p id="minus"class="plus_minus">-</p><input type="number" class="number" placeholder="1"><p id="plus"class="plus_minus">+</p></div>
+                    <div id="amount" class="amount">¢00.00</div>
+                  </div>
+                  <div class="grid-container">
+                    <div id="delete_product" class="delete_product"><ion-icon class="deleteIcon" [src]=deleteIcon></ion-icon></div>
+                    <div id="product_name_instruction" class="product_name_instruction"><p id="product_name" class="product_name">Producto</p><p id="product_instruction" class="product_instruction">Instrucción</p> </div>
+                    <div id="edit" class="edit"><ion-icon class="editIcon" [src]=editIcon></ion-icon></div>
+                    <div id= circle class="circle"><div class="circle_new"></div></div>
+                    <div id=counter class="counter"><p id="minus"class="plus_minus">-</p><input type="number" class="number" placeholder="1"><p id="plus"class="plus_minus">+</p></div>
+                    <div id="amount" class="amount">¢00.00</div>
+                  </div>
+                  <div class="grid-container">
+                    <div id="delete_product" class="delete_product"><ion-icon class="deleteIcon" [src]=deleteIcon></ion-icon></div>
+                    <div id="product_name_instruction" class="product_name_instruction"><p id="product_name" class="product_name">Producto</p><p id="product_instruction" class="product_instruction">Instrucción</p> </div>
+                    <div id="edit" class="edit"><ion-icon class="editIcon" [src]=editIcon></ion-icon></div>
+                    <div id= circle class="circle"><div class="circle_new"></div></div>
+                    <div id=counter class="counter"><p id="minus"class="plus_minus">-</p><input type="number" class="number" placeholder="1"><p id="plus"class="plus_minus">+</p></div>
+                    <div id="amount" class="amount">¢00.00</div>
+                  </div>
+                  </div>  
+            </div>
+              
+          </div>
+          <div class="foot" id="foot">
+           <div class="content_end">
+              <div class="amounts">
+                  <div class="subTotal"><p class="subTotal_text">SUB</p> <p class="subTotal_amount">¢00.00</p></div>
+                  <div class="tax_IVA"><p class="tax_IVA_text">I.V.A</p> <p class="tax_IVA_amount">¢00.00</p></div>
+                  <div class="tax_serv" id="tax_serv"><p class="tax_serv_text">Servicio</p> <p class="tax_serv_amount" id="tax_serv_amount">¢00.00</p></div>
+                  <p class="total" id="total">¢00.00</p>
+                </div>
+           </div>
+            
+      
+            <div class="buttons">
+                <button class="btn_gray" >2000</button>
+                <button class="btn_gray" >5000</button>
+                <button class="btn_gray" >+</button>
+                <button class="btn_gray btn_xl" >Tarjeta</button>
+                <button class="btn_gray btn_xl" >Otras formas de pago</button>
+            </div>
+                
+      
+      
+          </div>
+        </ul>
+      </div>
+</div>

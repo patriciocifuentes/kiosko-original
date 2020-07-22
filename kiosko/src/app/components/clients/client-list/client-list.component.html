@@ -1,0 +1,80 @@
+<div class="content_client">
+  <div class="top">
+      <img class="backIcon" src="./assets/icon/png/backIcon.png" alt="" srcset="">
+      <a class= "firstText">C L I E N T E S</a>
+      <img class="addIcon" src="./assets/icon/png/addBlueIcon.png" alt="" srcset="" (click)="openAddModal()">
+    </div>
+    
+    <div class="mod_delete">
+      <button (click)="openAddModal()" class="modify_client">
+        <img class="modifyIcon" src="./assets/icon/png/modifyIcon.png" alt="" srcset="">
+        <a class="mod_delete_texts">Modificar</a></button>
+      <button class="delete_client">
+        <img class="deleteIcon" src="./assets/icon/png/deleteIcon.png" alt="" srcset="">
+        <a class="mod_delete_texts">Eliminar</a></button>
+    </div>
+    
+    
+    <div class="search">
+      <img class="searchIcon" src="./assets/icon/png/searchIcon.png" alt="" srcset="">
+      <input class="search_text"type="text" placeholder="Búsqueda">
+    </div>
+    
+    <div class="content">
+      <table>
+        <tr class="table_title">
+          <td> </td>
+          <td>Apellidos</td>
+          <td>Nombre</td>
+        </tr>
+        <tr id="table_info" class="table_info">
+          <td> 
+            <div class="container">
+              <div class="round">
+                <input type="checkbox" id="checkbox" />
+                <label for="checkbox"></label>
+              </div>
+            </div>
+          </td>
+          <td id="last_name">Montero</td>
+          <td id="name" class="name">Jorge</td>
+          <hr>
+        </tr>
+      </table>    
+    </div>
+    
+    <div id="add_modal" class="modal">
+      <div class="modal-content">
+        <span class="close" (click)="hideAddModal()">&times;</span>
+        <div class="modal_body">
+            <div class="form_inline form_1">
+                <div class="info_text_1"><label class="text_2rem" for="">Nombre</label><input class="modal_input" type="text"></div>
+                <div class="info_text_2"><label class="text_2rem" for="">Apellidos</label> <input class="modal_input" type="text"></div>
+              </div> 
+              <div class="form_inline form_2">
+                <label class="text_2rem" for="">Identificación</label><input class="modal_input" type="text" >
+                <label class="text_2rem" for="">Correo</label><input class="modal_input" type="email">
+                <label class="text_2rem" for="">Teléfono</label><input class="modal_input" type="text">
+              </div> 
+              <hr>
+              <div class="form_inline">
+                <div class="container_modal">
+                  <div class="round">
+                    <input type="checkbox" class="checkbox_exoneration" id="checkbox_exoneration" />
+                    <label for="checkbox_exoneration"></label>
+                  </div>
+                  <div class="exoneration">Exoneración</div>
+                </div>
+              </div> 
+              <div class="modal_footer">
+                <button (click)="openAddModal()" class="btn btn_footer">Permisos</button>
+              </div>
+              
+          
+        </div>
+    
+        
+      </div>
+    
+    </div>
+</div>

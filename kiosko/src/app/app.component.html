@@ -1,0 +1,85 @@
+<ion-app>
+  <ion-split-pane>
+    <ion-menu type="overlay">
+    
+
+          <div class="menu_header">
+            <ion-menu-toggle>
+              <img src="./assets/icon/png/close.png" class="icon icon_close" alt="" srcset="">
+                <!-- <ion-icon class="icon icon_close" [src]=closeIcon></ion-icon> -->
+            </ion-menu-toggle>
+            <img src="./assets/icon/png/bell.png" routerLink="/notifications" routerDirection="root" class="icon icon_header" alt="" srcset="">
+            <!-- <ion-icon class="icon icon_header" [src]=bellIcon></ion-icon> -->
+          </div>
+       
+  
+      <ion-content>
+        <div class="items">
+            <ion-menu-toggle>
+                <div class="menu_item" routerLink="/internalcontrol" routerDirection="root">
+                  <ion-icon class="icon" [src]=settingsIcon></ion-icon>
+                  <h2 class="menu_item_text">Control Interno</h2>
+                </div>
+            </ion-menu-toggle>
+              <hr class="line">
+              <ion-menu-toggle>
+                  <div class="menu_item" routerLink="/productlist" routerDirection="root">
+                    <ion-icon class="icon" [src]=productsIcon></ion-icon>
+                    <h2 class="menu_item_text">Productos</h2>
+                  </div>
+              </ion-menu-toggle>
+
+              <hr class="line">
+              <ion-menu-toggle>
+                  <div class="menu_item" routerLink="/annulment" routerDirection="root">
+                    <ion-icon class="icon" [src]=annulmentIcon></ion-icon>
+                    <h2 class="menu_item_text">Anulaciones</h2>
+                  </div>
+              </ion-menu-toggle>
+
+              <hr class="line">
+              <ion-menu-toggle>
+                  <div class="menu_item" routerLink="/cashclose" routerDirection="root">
+                    <ion-icon class="icon" [src]=checkIcon></ion-icon>
+                    <h2 class="menu_item_text">Cierre de Caja</h2>
+                  </div>
+              </ion-menu-toggle>
+
+
+             
+              <div class="menu_footer" (click)="openAddModal()">
+                  <hr class="line">
+                  <div class="menu_item">
+                    <img class="icon" src="./assets/icon/png/logoutIcon.png" alt="">
+                    <h2 class="menu_item_text">Cerrar Sesión</h2>
+                  </div>
+              </div>
+
+        </div>
+      </ion-content>
+    </ion-menu>
+    <ion-router-outlet main></ion-router-outlet>
+  </ion-split-pane>
+
+
+  <div id="componet_modal" class="modal">
+      <div class="modal-content">
+        <span class="close" (click)="hideAddModal()">&times;</span>
+        <div class="modal_title">
+         
+        </div>
+        <div class="modal_body">
+            <h2 class="title">¿Deseas Cerrar</h2>
+            <h2 class="title">Sesión?</h2>
+            <div class="icon_modal_center">
+                <img class="icon icon_center" src="./assets/icon/png/logoutIcon.png">
+            </div>
+            
+            <div class="modal_footer">
+              <button (click)="hideAddModal()" class="btn btn_footer btn_no">No</button>
+              <button class="btn btn_footer btn_yes">Sí</button>
+            </div>
+        </div>  
+      </div>
+  </div>
+</ion-app>

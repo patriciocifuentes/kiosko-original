@@ -1,0 +1,36 @@
+.productItem{
+    height: 82px;
+    width: 130px;
+    margin-left: 10px;
+    margin-right: 0;
+    margin-top: 0;
+}
+
+.productList{
+    width: 90%;
+    margin: 5% auto;
+    overflow: scroll;
+    height: 300px;
+}
+
+.productItem:hover{
+    border: solid #00bcb4 5px;
+}
+
+.footer{
+    display: flex;
+    padding: 0;
+    margin-bottom: 40px;
+}
+
+.btn{
+    width: 250px;
+    margin: auto;
+    height: 33px;
+    font-size: 14px;
+    box-shadow: none;
+}
+
+.title-product{
+    font-size: 24px;
+}

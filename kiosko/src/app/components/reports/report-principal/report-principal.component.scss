@@ -1,0 +1,40 @@
+ion-card{
+    box-shadow: none;
+    margin-left: 68px;
+}
+
+.backIcon{
+    margin-left: 30px;
+    margin-top: 32px;
+}
+
+.title{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #455A64;
+    justify-content: center;
+    margin-top: -22.5px;
+}
+
+.body{
+    margin-top: 52px;
+}
+
+p{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    color: #455A64;
+}
+
+hr{
+   color: #DADADA;
+}

@@ -1,0 +1,187 @@
+.modal-container{
+    width: 85%;
+    height: auto;
+    margin: 6% auto;
+}
+
+.percentage_input{
+    width: 60px;
+    height: 40px;
+    background: #FFFFFF;
+    border: 1px solid #30304C;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.percentage_icon{
+    font-size: 30px;
+    font-weight: bold;
+    color: #30304C;
+    margin-top: 1%;
+}
+
+.header_container{
+    width: 90%;
+    margin: auto;
+    
+}
+
+.input_container{
+    display: flex;
+}
+
+.modal-content{
+    width: 90%;
+    margin-top: 4%;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+    border-radius: 0;
+}
+.label-text{
+    font-size: 15px;
+    font-weight: 500;
+}
+.check_button_container{
+    margin-top: 5%;
+    padding-left: 40px;
+    margin-bottom: 0px;
+}
+
+.check_button_container label{
+    padding-top: 10%;
+}
+.checkmark{
+    position: absolute;
+    top: 12px;
+    left: 15px;
+    height: 15px;
+    width: 15px;
+    background-color: #F4F4F4;
+    border-radius: 25px;
+    border: solid #A3D7D9 2px;
+}
+
+.slash{
+    margin-left: 2%;
+    margin-right: -1%;
+    font-size: 15px;
+    color: #30304C;
+}
+
+.inline_form{ 
+    margin-top: 5%;
+}
+
+.inline_form label{
+    margin-top: 1%;
+}
+
+.btn{
+    font-size: 1.2rem;
+}
+
+.subtitle-product{
+    color: #759DAA;
+    font-size: 14px;
+}
+
+.title-product{
+    font-size: 24px;
+}
+
+input{
+    height: 30px;
+    font-size: 12px;
+}
+
+.sm_input{
+    width: 40px;
+    border: 1px solid #30304C;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 13% 13% 13% 13% 13% 13% 13%;
+    margin-left: 20%;
+    
+}
+.grid-item {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    font-size: 12px;
+    font-family: Mada;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 19px;
+    color: #455A64;
+    padding-left: 5px;
+}
+
+.grid-item-text{
+    padding-left: 10px;
+}
+
+.grid-item-check{
+    padding-left: 6px;
+}
+
+.days{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    padding-left: 0;
+    margin-bottom: 0;
+    border: 2px solid #29839C;
+}
+
+.days-container input:checked ~ .days {
+    background-color: #29839C;
+  }
+
+.day{
+    width: 14%;
+    margin: 0;
+
+}
+
+.days-container{
+    padding-left: 0;
+    margin-bottom: 0px;
+    display: flex;
+    width: auto;
+    margin-left: 5px;
+    width: 75%;
+    float: right;
+    margin-right: 5%;
+}
+
+.day_text{
+    margin-left: 10px;
+    font-size: 12px;
+    font-family: Mada;
+    font-style: normal;
+    font-weight: 500;
+    color: #29839C;
+}
+
+.mr-5{
+    margin-right: 5px;
+}
+
+.btn{
+    height: 30px;
+    font-size: 11px;
+    box-shadow: none;
+}
+
+.bottom_buttons_container{
+    margin-top: 20px;
+    padding-bottom: 15px;
+}
+
+.mt-50{
+    margin-top: 50px
+}

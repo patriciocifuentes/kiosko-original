@@ -1,0 +1,189 @@
+<div class="content">
+
+  <div class="header-menu">
+      <div class="back">
+        <img class="backIcon" src="./assets/icon/png/backIcon.png" alt="" srcset="">
+      </div>
+      <div class="quit">
+        <p href="">Omitir</p>
+      </div>
+    </div>
+
+  <div class="informationText">
+      <div class="title-product">Configurá tu descuento</div>
+      <div class="subtitle-product">Agrega descuentos específicos <br> para tu negocio</div>
+  </div>
+    
+
+  <div class="modal-container">
+
+    <div class="header_container">
+      <div class="input_container">
+        <input type="text" class="form__input percentage_input">
+        <span class="percentage_icon">%</span>
+      </div>
+    </div>
+
+    <div class="modal-content">
+        <label for="" class="formulario__label label-text">Nombre del descuento</label>
+        <input type="text" placeholder="Ej. Happy Hour" class="form__input modal_input" id="name">
+    </div>
+
+    
+    <label class="check_button_container">
+        <input type="checkbox">
+        <span><label for="" class="label-text">Permanente</label></span>
+        <span class="checkmark"></span>
+    </label>
+
+    <div class="inline_form">
+        <label for="" class="formulario__label label-text">Fecha</label>
+        <input type="text" placeholder="dd" class="form__input sm_input" id="name">
+        <p class="slash">/</p>
+        <input type="text" placeholder="mm" class="form__input sm_input" id="name">
+        <p class="slash">a</p>
+        <input type="text" placeholder="dd" class="form__input sm_input" id="name">
+        <p class="slash">/</p>
+        <input type="text" placeholder="mm" class="form__input sm_input" id="name">
+    </div>
+
+    <div class="days-container">
+      <div class="day">
+          <label class="check_button_container days-container">
+              <input type="checkbox">
+              <span class="checkmark days"></span>
+          </label>
+          <div class="day_text">L</div>
+      </div>
+
+      <div class="day">
+          <label class="check_button_container days-container">
+              <input type="checkbox">
+              <span class="checkmark days"></span>
+          </label>
+          <div class="day_text">K</div>
+      </div>
+
+      <div class="day">
+          <label class="check_button_container days-container">
+              <input type="checkbox">
+              <span class="checkmark days"></span>
+          </label>
+          <div class="day_text">M</div>
+      </div>
+
+      <div class="day">
+          <label class="check_button_container days-container">
+              <input type="checkbox">
+              <span class="checkmark days"></span>
+          </label>
+          <div class="day_text">J</div>
+      </div>
+
+      <div class="day">
+          <label class="check_button_container days-container">
+              <input type="checkbox">
+              <span class="checkmark days"></span>
+          </label>
+          <div class="day_text">V</div>
+      </div>
+
+      <div class="day">
+          <label class="check_button_container days-container">
+              <input type="checkbox">
+              <span class="checkmark days"></span>
+          </label>
+          <div class="day_text">S</div>
+      </div>
+
+      <div class="day">
+          <label class="check_button_container days-container">
+              <input type="checkbox">
+              <span class="checkmark days"></span>
+          </label>
+          <div class="day_text">D</div>
+      </div>
+        
+    </div>
+
+    <!-- <div class="grid-container">
+        <div class="grid-item grid-item-check">
+            <label class="check_button_container days-container">
+                <input type="checkbox">
+                <span class="checkmark days"></span>
+            </label>
+        </div>
+        <div class="grid-item grid-item-check">
+          <label class="check_button_container days-container">
+                <input type="checkbox">
+                <span class="checkmark days"></span>
+            </label>
+        </div>
+        <div class="grid-item grid-item-check">
+          <label class="check_button_container days-container">
+                <input type="checkbox">
+                <span class="checkmark days"></span>
+            </label>
+        </div>
+        <div class="grid-item grid-item-check">
+          <label class="check_button_container days-container">
+                <input type="checkbox">
+                <span class="checkmark days"></span>
+            </label>
+        </div>
+        <div class="grid-item grid-item-check">
+          <label class="check_button_container days-container">
+                <input type="checkbox">
+                <span class="checkmark days"></span>
+            </label>
+        </div>
+        <div class="grid-item grid-item-check">
+          <label class="check_button_container days-container">
+                <input type="checkbox">
+                <span class="checkmark days"></span>
+            </label>
+        </div>
+        <div class="grid-item grid-item-check">
+          <label class="check_button_container days-container">
+                <input type="checkbox">
+                <span class="checkmark days"></span>
+            </label>
+        </div>
+
+        <div class="grid-item grid-item-text">L</div>
+        <div class="grid-item grid-item-text">K</div>
+        <div class="grid-item grid-item-text">M</div>
+        <div class="grid-item grid-item-text">J</div>
+        <div class="grid-item grid-item-text">V</div>
+        <div class="grid-item grid-item-text">S</div>
+        <div class="grid-item grid-item-text">D</div>
+    </div> -->
+
+    <div class="inline_form mt-50">
+        <label for="" class="formulario__label label-text mr-5">Hora</label>
+        <input type="text" placeholder="00" class="form__input sm_input" id="name">
+        <p class="slash">:</p>
+        <input type="text" placeholder="00" class="form__input sm_input" id="name">
+        <p class="slash"> a </p>
+        <input type="text" placeholder="00" class="form__input sm_input" id="name">
+        <p class="slash">:</p>
+        <input type="text" placeholder="00" class="form__input sm_input" id="name">
+    </div>
+
+    
+    <div class="bottom_buttons_container">
+      <button class="btn btn_cancel">No agregar</button>
+      <button class="btn btn_Add" routerLink="/discounttoproduct" routerDirection="root">Agregar a productos</button>
+    </div>
+
+
+
+  </div>
+
+
+
+    
+</div>
+
+
+

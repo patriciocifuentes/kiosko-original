@@ -1,0 +1,264 @@
+<div class='content tabs'>
+
+    <div class="content_check_1">
+        <div class="up">
+          <div class="client_name">
+              <input type="text" class="text_name" id="input_client{{itemID}}" placeholder="Nombre"  [(ngModel)]="client_name" (click)="click_client_input()">
+              <img class="addIcon" src="./assets/icon/png/addBlueIcon.png" alt="" srcset="" (click)="openAddModalClient()" (click)="clientList()">
+              <img class="dumpIcon" src="./assets/icon/png/dumpIcon.png" alt="" srcset=""(click)="click_clean_check()">
+          </div>
+          <div class="to_go" ><p>Para llevar</p><input type="checkbox" class="switch" id="switch_id{{itemID}}" />
+            <label for="switch_id{{itemID}}"></label></div>
+          <div class="express" >
+            <img class="addCircleIcon" src="./assets/icon/png/addCircle.png" alt="" srcset="">
+            <label class="text_express">Express</label>
+          </div> 
+        </div>
+        <div class="mid">
+          <ion-content>
+
+            <!-- <h1> Hola {{itemID}}</h1>
+             <div *ngFor="let item of _product_list">
+              <h1>{{item.id}}</h1>
+            </div> -->
+
+          <div class="flex-container" *ngFor="let item of local_List">
+            <div id="delete_product" class="delete_product" (click)="click_delete_check_line(item)">
+              <img class="deleteIcon" src="./assets/icon/png/deleteIcon.png" alt="" srcset="">
+            </div>
+            <div id="product_name_instruction" class="product_name_instruction">
+              <p id="product_name" class="product_name">{{item.name}}</p>
+              <div *ngFor="let mod of modifiersList"  id="product_instruction" class="product_instruction content_instructions">
+                <p *ngIf="mod.id_check_detail==item.id"> {{mod.description}} </p>
+              </div>
+            </div>
+            <div id="edit" class="edit">
+              <img class="editIcon" src="./assets/icon/png/editIcon.png" alt="" srcset="" (click)="openAddModalModifier(item)">
+            </div>
+            <div id= "circle{{itemID}}" class="circle">
+              <div id= "circle_new{{itemID}}" class="circle_new"></div>
+            </div>
+            <div id="counter" class="counter">
+              <p id="minus" class="plus_minus" (click)="subtractQuantity(item)">-</p>
+              <input type="number" id="number_counter{{itemID}}" class="number"  [(ngModel)]="item.quantity" (ngModelChange)="valuechange($event, item)" (click)="click_input_counter()" >
+              <!--  -->
+              <p id="plus"class="plus_minus" (click)="addQuantity(item)">+</p>
+            </div>
+            <div id="amount" class="amount">{{item.total_price}}</div>
+        </div> 
+        </ion-content>    
+      </div>
+      <div class="foot" id="foot{{itemID}}">
+        <div class="buttons">
+          <button class="btn_opcions btn_precheck">Prefactura</button>
+          <button class="btn_opcions desc" id="btn-desc" (click)="openAddModalDiscount()" (click)="listDiscount()">Descuentos</button><!--  routerLink="/userpin" -->
+          <button class="btn_opcions" id="btn_cash" (click)="openModalElectronicCheck()">Efectivo</button>
+          <button class="btn_opcions" id="btn_card{{itemID}}" (click)="openModalElectronicCheck()">Tarjeta</button>
+        </div>
+        <div class="amounts">
+          <div class="subTotal"><p class="subTotal_text">SUB</p> <p class="subTotal_amount">¢{{subtotal}}</p></div>
+          <div class="tax_IVA"><p class="tax_IVA_text">I.V.A</p> <p class="tax_IVA_amount">¢{{iva}}</p></div>
+          <div class="tax_serv" id="tax_serv{{itemID}}"><p class="tax_serv_text">Servicio</p> <p class="tax_serv_amount" id="tax_serv_amount">¢{{tax_service}}</p></div>
+          <p class="total" id="total">¢{{total}}</p>
+        </div>
+      </div>
+
+      <!-- client modal -->
+      <div id="add_modalClient{{itemID}}" class="modal">
+        <div class="modal-content modal_client">
+          <span class="close" (click)="hideAddModalClient()">&times;</span>
+          <div class="modal_body">
+            <div class="form_inline form_client">
+                  
+      <div class="search">
+        <img class="searchIcon" src="./assets/icon/png/searchIcon.png" alt="" srcset="">
+        <input class="search_text"type="text" placeholder="Búsqueda">
+      </div>
+      <table>
+        <tr class="flex_title">
+          <td class="lastname_text">Apellidos</td>
+          <td class="name_text">Nombre</td>
+        </tr>
+        <tr class="flex_info" *ngFor="let item of client_list">
+          <td id="client_lastName" (click)="get_click_client(item)" (click)="hideAddModalClient()">{{item.lastname}}</td>
+          <td id="client_name" (click)="get_click_client(item)" (click)="hideAddModalClient()">{{item.name}}</td>
+        </tr>
+      </table>
+        </div>       
+        </div>
+        </div>
+      </div>
+      
+      <!-- Discount modal -->
+      <div id="add_modalDiscount{{itemID}}" class="modal discount_modal">
+        <div class="modal-content side front modal-5vh" id="front_side{{itemID}}">
+          <span class="close" (click)="hideAddModalDiscount()">&times;</span>
+          <div class="modal_body">
+            <div class="form_inline form_discount">
+              <div class="flex_discount">
+                  <ion-list class="container">
+                    <ion-item *ngFor="let item of discount_global_list">
+                      
+                      <ion-label id="discount_name">{{item.name}}</ion-label>
+                      <ion-checkbox slot="start" id="checkbox_discount{{itemID}}" (click)="saveItemDiscount(item.id)"></ion-checkbox>
+                      <div id="percentage_date" class="percentage_date"><p id="percentage" class="percentage">{{(item.percentage*100)}}%</p><p id="day" class="day">{{item.description}}</p></div>
+                    </ion-item>
+                  </ion-list> 
+                </div>
+
+              <div class="flex_discount_extra">
+                  <div class="container2" id="container2{{itemID}}">
+                      <ion-item >  
+                        <ion-label >Descuento Extra</ion-label>
+                        <ion-checkbox id="discount_extra{{itemID}}" slot="start" ></ion-checkbox> 
+                      </ion-item>
+                      <div  class="percentage_text"><input type="text" id="percentage_text{{itemID}}" class="percentage_discount">
+                        <label class="discount_symbol" for="">%</label></div>
+                      </div>
+              </div>
+              <button class="btn_exoneration" id="btn_exoneration{{itemID}}">EXONERACIÓN</button>
+              <button class="btn_reduce_rate">TARIFA REDUCIDA</button>
+              <div class="btns">
+                  <button class="btn_skip">Omitir</button>
+                  <button class="btn_confirm btn_discount" (click)="saveDiscountPrincipal()" (click)="hideAddModalDiscount()">Confirmar</button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+              <!-- discount_back modal -->
+      <div class="modal-content side exoneration_side" id="back_side_exoneration{{itemID}}">
+        <div class="body_exoneration">
+          <div class="exoneration_back_arrow" id="arrowLeft_exoneration{{itemID}}">
+            <img class="arrowLeft_exoneration" src="./assets/icon/png/arrowLeft.png" alt="" srcset="">
+          </div>
+          <input type="text" class="percentage_exoneration" >
+          <label for=""class="percentage_symbol_exoneration">%</label>
+          <label for="" class="label_exoneration">N° Documento Exoneración</label>
+          <input type="text" class="inputs_exoneration" id="num_exoneration{{itemID}}">
+          <label for="" class="label_exoneration">Fecha emisión Documento</label>
+          <input type="text" class="inputs_exoneration" id="emission_date{{itemID}}">
+          <label for="" class="label_exoneration">Nombre Empresa</label>
+          <input type="text" class="inputs_exoneration" id="company_name{{itemID}}">
+          <label for="" class="label_exoneration">Dirección Empresa</label>
+          <input type="text" class="inputs_exoneration" id="company_address{{itemID}}">
+          <button class="btn_confirm_exoneration" (click)="saveExoneration()">Confirmar</button>
+        </div>
+      </div>
+      </div>
+
+      <!-- Modifier modal -->
+      <div id="add_modalModifier{{itemID}}" class="modal">
+          <div class="modal-content modal-modifier">
+            <span class="close" (click)="hideAddModalModifier()">&times;</span>
+            <div class="modal_body">
+                <div class="form_inline form_modifier">
+                    <img class="editIconModal" src="./assets/icon/png/editIcon.png" alt="" srcset="">
+                    <p class="modifier_title">{{product_name}}</p>
+                    <div id="percentage_modifier{{itemID}}" class="percentage_modifier">
+                      <input type="text" class="txt_percentage_modifier">
+                      <label class="modifier_symbol" for="">%</label>
+                    </div>
+                    <div class="to_go_modal"><input  type="checkbox" id="switch_modal_id{{itemID}}" class="switch_modal">
+                      <label for="switch_modal_id{{itemID}}"></label><p>Para llevar</p>
+                    </div>
+
+                    <div id="dropdown-categories{{itemID}}" class="dropdown dropdown-categories" (click)="showCategoryOptions(checkDetailID)">
+                      <div class="dropdown-trigger">
+                        <!--  aria-controls = "dropdown-menu" -->
+                        <button id="dropdown-btn" class="button dropdown-btn" aria-haspopup="true">
+                          <span class="text-dropdown" id="category-selected">
+                              <div id="select-category" class="color_Square_Text dropdown-categories-item color1"></div>
+                              <p>Mover a {{selectedHeaderItem}}</p>
+                          </span>
+                          <span id="icon-background" class="icon-background">
+                              <img class="arrowDown" src="./assets/icon/png/arrowDown.png">
+                          </span>
+                        </button>
+                      </div>
+                      <div class="dropdown-menu" id="dropdown-menu{{itemID}}" role="menu">
+                        <div class="dropdown-content">
+                          <a class="dropdown-item dropdown-category-item" *ngFor="let item of list_check_name" (click)="selectedHeader(item)">
+                            <p> {{item.id}} </p>
+                          </a>
+
+                          <a class="dropdown-item dropdown-category-item" >
+                            <div id="" class="color_Square_Item dropdown-header-item"></div>
+                            <p> DEFAULT</p>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <textarea class="txt_area_modifier" id="txt_area_modifier"></textarea>
+                    <button class="btn_confirm btn_modifier" (click)="save_percentage_modifier()" (click)="saveModifiersInfo()" (click)="hideAddModalModifier()">Confirmar</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- ElectronicCheck modal -->
+      <div id="add_modalElectronicCheck{{itemID}}" class="modal">
+          <div class="modal-content modal-5vh">
+            <span class="close" id="close" (click)="hideAddModalElectronicCheck()">&times;</span>
+            <div class="modal_body">
+              <p class="electronicCheck_title">Factura electrónica</p>
+                <div class="form_inline form_electronicCheck">
+                  <div class="identification_electronicCheck"><label for="">Identificación</label><input id="identification_electronicCheck{{itemID}}" type="text"[(ngModel)]="client.identification"></div>
+                  <div class="name_electronicCheck"><label for="">Nombre</label><input id="name_electronicCheck{{itemID}}" type="text"[(ngModel)]="client.name"></div>
+                  <div class="add_circle" routerLink="/clientlist" routerDirection="root">
+                      <img class="addClient" src="./assets/icon/png/addBlueIcon.png" alt="" srcset="">
+                  </div>
+                  <div class="lastName_electronicCheck"><label for="">Apellido</label><input id="lastname_electronicCheck{{itemID}}" type="text"[(ngModel)]="client.lastname"></div>
+                  <div class="email_electronicCheck"><label for="">Correo</label><input id="email_electronicCheck{{itemID}}" type="email"[(ngModel)]="client.email"></div> 
+                  <button class="btn_confirm btn_electronicCheck" id="btn_electronicCheck" (click)="openModalsCardExchange()" (click)="saveElectronicCheck()">Confirmar</button>
+                </div>
+            </div>
+          </div>
+      </div>
+
+      <!-- Exchange modal -->
+      <div id="add_modalExchange{{itemID}}" class="modal">
+        <div class="modal-content modal-5vh">
+          <span class="close" (click)="hideAddModalExchange()">&times;</span>
+          <div class="modal_body">
+            <div class="form_inline form_exchange">
+              <div class="total_payment">Total <label class="total_amount" >¢{{total}}</label></div>
+              <div class="cash">Efectivo <input class="pay_amount" id="pay_amount{{itemID}}" placeholder="¢0" [(ngModel)]="inputCash"></div>
+              <hr>
+              <div class="exchange_txt">Vuelto<input class="exchange_cash" [(ngModel)]="inputCash-total" readonly  type="text"id="exchange_cash{{itemID}}"></div>
+              
+            </div>
+            <button class="btn_confirm btn_exchange" (click)="openAddModalReady()">Confirmar</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card modal -->
+      <div id="add_modalCard{{itemID}}" class="modal">
+          <div class="modal-content modal_card ">
+            <span class="close" (click)="hideAddModalCard()">&times;</span>
+            <div class="modal_body">
+                <div class="form_inline form_card">
+                    <ion-icon class="cardIcon" [src]=cardIcon (click)="openAddModalReady()"></ion-icon>
+                    <p>DESLICE LA TARJETA</p>
+                </div>
+            </div>
+          </div>
+      </div>
+
+      <!-- Ready modal -->
+      <div id="add_modalReady{{itemID}}" class="modal">
+        <div class="modal-content modal_ready">
+          <div class="modal_body">
+            <div class="form_inline form_ready">
+              <ion-icon class="readyIcon" [src]=readyIcon></ion-icon>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+</div>
+  

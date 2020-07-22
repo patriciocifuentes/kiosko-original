@@ -1,0 +1,66 @@
+.top{
+    margin-top: 6%;
+    margin-left: 6%;
+}
+
+.mid-top{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 10%;
+    margin-top: 25%;
+}
+
+.firstText, .secondText{
+    font-family: Mada;
+    font-style: normal;
+    line-height: 131.25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #455A64;
+}
+
+.firstText{
+
+font-weight: normal;
+font-size: 15px;
+margin-bottom: 20%;
+}
+
+.secondText{
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.btn-btn{
+display: flex;
+justify-content: space-evenly;
+width: 90%;
+margin-left: 10%;
+margin-top: 30%;
+}
+
+.btn-yes, .btn-no{
+    border-radius: 100px;
+    width: 134px;
+    height: 35px;
+    font-family: Mada;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 131.25%;
+    box-shadow: 0px 8px 8px rgba(89, 134, 178, 0.35);
+    margin-right: 7%
+}
+.btn-no{
+    background: #A5DBDC;
+    color:#FFFFFF;
+}
+
+.btn-yes{
+    background: #FFFFFF;
+    color: #8F8F8F;
+}
+

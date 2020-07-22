@@ -1,0 +1,48 @@
+<div class="content">
+  <div class="top">
+      <img  class="backIcon" src="./assets/icon/png/backIcon.png" alt="" srcset="" (click)="goBack()">
+    </div>
+    
+    <div class="mid">
+      <p class="firstText">¿Olvidaste tu PIN?</p>
+      <p class="secondText">Administrador ingresa tu PIN</p>
+    </div>
+    
+    
+    <div class="squares">
+      <a class="square1"><input type="text"></a>
+      <a class="square2"><input type="text"></a>
+      <a class="square3"><input type="text"></a>
+      <a class="square4"><input type="text"></a>
+      </div>
+    
+      
+      <div class="numeric-keyboard">
+        <button class="num" id="1">1</button>
+        <button class="num" id="2">2</button>
+        <button class="num" id="3">3</button>
+        <button class="num" id="4">4</button>
+        <button class="num" id="5">5</button>
+        <button class="num" id="6">6</button>
+        <button class="num" id="7">7</button>
+        <button class="num" id="8">8</button>
+        <button class="num" id="9">9</button>
+        <button class="num" id="0" (click)="openAddModal()">0</button>
+    </div>
+
+    <div id="add_modal" class="modal modal_pin">
+      <div class="modal-content modal_content_pin">
+        <span class="close" (click)="hideAddModal()">&times;</span>
+        <div class="modal_body">
+          <div class="form_inline form_pin">
+            <label >Nombre</label><input type="text">
+            <label >Apellido</label><input type="text">
+            <label >Pin nuevo</label><input type="password">
+            <label >Vuelve a digitar el Pin</label><input type="password">
+            <button class="btn btn_save">Guardar</button>
+          </div>
+          
+        </div>
+      </div>
+    </div>  
+</div>

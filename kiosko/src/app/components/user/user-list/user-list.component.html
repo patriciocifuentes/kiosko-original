@@ -1,0 +1,48 @@
+<div class="content">
+    <div class="top">
+        <img class="backIcon" src="./assets/icon/png/backIcon.png" alt="" srcset=""routerLink="/internalcontrol" routerDirection="root">
+        <a class= "firstText">U S U A R I O S</a>
+        <img class="pointsIcon" src="./assets/icon/png/pointsIcon.png" alt="" srcset="">
+        <img (click)="openAddModal()" class="addIcon" src="./assets/icon/png/addBlueIcon.png" alt="" srcset="">
+      </div>
+
+      <div class="search">
+        <img class="searchIcon" src="./assets/icon/png/searchIcon.png" alt="" srcset="">
+        <input class="search_text"type="text" placeholder="Búsqueda">
+      </div>
+      
+      <div class="content_table">
+        <table>
+          <tr class="table_title">
+            <td>Apellidos</td>
+            <td>Nombre</td>
+          </tr>
+          <tr id="table_info" id="table_info">
+            <td id="last_name">Montero</td>
+            <td id="name_position" class="name_position"><a id="name" class="name">Jorge</a><a id="position" class="position">Admin</a></td>
+            <hr>
+          </tr>
+        </table>    
+      </div>
+      
+      <div id="add_modal" class="modal">
+        <div class="modal-content">
+          <span class="close" (click)="hideAddModal()">&times;</span>
+          <div class="modal_body">
+            <div class="form_inline form_1">
+              <div class="info_text_Name"><label class="text_2rem" for="">Nombre</label><input class="modal_input" type="text"></div>
+              <div class="info_text_Last_name"><label class="text_2rem" for="">Apellidos</label> <input class="modal_input" type="text"></div>
+              <div class="info_text_pin">
+                <label class="text_2rem" for="">Pin</label> <input class="modal_input" type="password">
+                  <img class="helpIcon" src="./assets/icon/png/helpIcon.png" alt="" srcset="" routerLink="/forgotpin" routerDirection="root">
+              </div>
+            </div> 
+            <div class="modal_footer">
+              <button (click)="openAddModal()" class="btn btn_footer">Guardar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+</div>
+

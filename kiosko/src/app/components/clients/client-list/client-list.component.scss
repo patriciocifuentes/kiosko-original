@@ -1,0 +1,257 @@
+.top{
+    margin-left:6%;
+    margin-top: 5%;
+    margin-right: 6%;
+    display: flex;
+}
+
+.addIcon{
+    color: #A3D7D9;
+    margin-right: 0%;
+    height: 14px;
+    width: 14px;
+}
+
+.firstText{
+    font-family: Mada;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #455A64;
+    margin-left: 28%;
+}
+
+.mod_delete{
+    width: 100%;
+    height: 67px;
+    background: #F4F4F4;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    display: none;
+}
+
+.delete_client, .modify_client{
+    background: #F4F4F4;
+    display: flex;
+}
+
+.modify_client{
+    margin-left: 50%;
+}
+
+button{
+    width: 25%;
+}
+
+.modifyIcon{
+    margin-top: -6.3%;
+}
+
+.mod_delete_texts{
+    font-family: Mada;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    color: #455A64;
+    margin-left: 5%;
+}
+
+.deleteIcon{
+    width: 11px;
+    height: 12px;
+    margin-top: 3%;
+}
+
+.content table td, .content table th {
+    vertical-align: middle;
+    padding-left: 8%;
+}
+
+.search{
+   margin-top: 12%;
+   width: 300px;
+   height: 27px;
+   margin-left: 8%;
+   background: #F9F9F9;
+   border: 1px solid #D6DEE5;
+   box-sizing: border-box;
+   border-radius: 10px;
+   overflow: hidden;
+}
+
+.search_text{
+    padding-left: 25px;
+    width: 290px;
+    height: 27px;
+    background: #F9F9F9;
+}
+
+.searchIcon{
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    margin-top: 1%;
+    margin-left: 1%;
+}
+
+.container{
+    display: flex;
+    padding-top: 66%;
+}
+
+.round {
+    position: relative;
+  }
+  
+  .round label {
+    background-color: #fff;
+    border: 1px solid #A3D7D9;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 15px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 15px;
+  }
+  
+  .round label:after {
+    border: 2px solid #fff;
+    border-top: none;
+    border-right: none;
+    content: "";
+    height: 4.5px;
+    left: 3px;
+    opacity: 0;
+    position: absolute;
+    top: 3px;
+    transform: rotate(-45deg);
+    width: 6px;
+  }
+  
+  .round input[type="checkbox"] {
+    visibility: hidden;
+  }
+  
+  .round input[type="checkbox"]:checked + label {
+    background-color: #A3D7D9;
+    border-color: #A3D7D9;
+  }
+  
+  .round input[type="checkbox"]:checked + label:after {
+    opacity: 1;
+  }
+
+.content{
+    margin-top: 7%;
+}
+
+.table_title{
+    font-family: Mada;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 19px;
+    background: #F4F4F4;
+    height:37px;
+    color: #455A64;
+}
+
+.table_info{
+    height: 69px;
+}
+
+td{
+    font-size: 15px;
+ }
+tr{
+    height: 10px;
+}
+
+.modal-content{
+    width: 300px;
+    background: #fff;
+}
+
+.form_1{
+    display: flex;
+    flex-direction: row;
+    margin-top: 21%;
+}
+.info_text_1, .info_text_2{
+    display: flex;
+    flex-direction: column;
+}
+
+.info_text_1, .info_text_2 input{
+    width: 103.5px;
+}
+
+label{
+    font-family: Mada;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 30px;
+    color: black;
+    font-weight: 500;
+}
+.info_text_1{
+    margin-left: -3%;
+    margin-right: 2%;
+}
+
+.info_text_2{
+    margin-left: 2%;
+    margin-right: -3%;
+}
+
+.modal_input{
+    background: white;
+    margin-bottom: 13%;
+    margin-top: -2%;
+    width: 93%;
+}
+.container_modal{
+    display: flex;
+    padding-top: 30%;
+    margin-top: -44%;
+}
+
+.form_2{
+    margin-top: 4%;
+    margin-left: -3%;
+    margin-right: -3%;
+}
+
+.exoneration{
+    font-family: Mada;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    color: #455A64;
+    margin-left: 8%;
+    margin-bottom: 5%;
+}
+.modal_body input{
+    height: 20px;
+}
+
+.btn_footer{
+    width:195px;
+    height: 25px;
+    font-size: 14px;
+}

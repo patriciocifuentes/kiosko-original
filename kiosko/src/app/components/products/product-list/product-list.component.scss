@@ -1,0 +1,171 @@
+.addIcon{
+    margin: auto;
+    height: 17px;
+    width: 17px;
+    margin-bottom: 10px;
+}
+
+.header_title{
+    font-family: Mada;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #455A64;
+}
+
+.header-menu{
+    width: 85%;
+}
+
+.search{
+    margin-top: 13%;
+    margin-bottom: 10px;
+}
+
+.mod-delete{
+    width: 100%;
+    height: 70px;
+    background: #F4F4F4;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.delete_client, .modify_client{
+    background: #F4F4F4;
+    display: flex;
+}
+
+.modify_client{
+    margin-left: 50%;
+}
+
+button{
+    width: 25%;
+}
+
+.modifyIcon, .deleteIcon{
+    margin-top: -1.3%;
+}
+
+.modifyIcon{
+    width: 15px;
+    height: 15px;
+}
+.deleteIcon{
+    width: 12px;
+    height: 13px;
+}
+
+.mod-delete-text{
+    font-family: Mada;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    color: #455A64;
+    margin-left: 5%;
+}
+
+.content{
+    margin-bottom:80%;
+}
+
+.client_list_title{
+    font-family: Mada;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 19px;
+    background: #F4F4F4;
+    height: 40px;
+    color: #455A64;
+}
+
+.checkmark{
+    top: 20px;
+    left: 25px;
+    height: 15px;
+    width: 15px;
+    background-color: #F4F4F4;
+    border-radius: 25px;
+    border: solid #A3D7D9 2px;
+}
+
+.content table td, .content table th {
+    padding-left: 8%;
+    vertical-align: middle;
+}
+
+td{
+    font-size: 15px;
+ }
+tr{
+    height: 10px;
+}
+
+
+
+.client_list_info{
+    height: 10px;
+}
+
+.name{
+    font-family: Mada;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    color: #455A64;
+}
+
+.position{
+    font-family: Mada;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    color: #C4C4C4;
+    padding-top: 6%;
+}
+
+.table{
+    margin-top: 10%;
+}
+
+.container_round{
+    margin-top: 14px;
+    margin-left: 24px;
+}
+
+.check_column_title{
+    width: 15%;
+}
+
+.name_row{
+    padding-top: 3%;
+}
+
+.check_button_container{
+    padding-bottom: 56px;
+    padding-left: 20px;
+    width: 0;
+}
+
+ion-content{
+    height: 75vh;
+}
+

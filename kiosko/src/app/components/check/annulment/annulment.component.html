@@ -1,0 +1,50 @@
+<div class="content">
+    <div class="top">
+        <img class="backIcon" src="./assets/icon/png/backIcon.png" alt="" srcset="" (click)="goBack()">
+        <a class= "firstText">A N U L A C I O N E S</a>
+        <img class="addIcon" src="./assets/icon/png/addIcon.png" alt="" srcset="">
+      </div>
+      
+      <div class="search">
+        <img class="searchIcon" src="./assets/icon/png/searchIcon.png" alt="" srcset="">
+        <input class="search_text"type="text" placeholder="Búsqueda">
+      </div>
+      
+      <div class="content_table">
+        <table>
+          <tr class="table_title">
+            <td class="id">CÓDIGO</td>
+            <td class="date">FECHA</td>
+            <td> </td>
+          </tr>
+          <tr id="table_info" class="table_info">
+            <td (click)="openAddModal()" id="id_check" class="id_check">12332</td>
+            <td (click)="openAddModal()" id="date_check" class="date_check">15/10</td>
+            <td id="details" class="details"><p href="#">Detalles</p></td>
+            <hr>
+          </tr>
+        </table>    
+      </div>
+      
+      <div id="add_modal" class="modal">
+        <div class="modal-content">
+          <span class="close" (click)="hideAddModal()">&times;</span>
+          <div class="modal_body">
+              <div class="form_inline form_1">
+                  <div class="info_text_1"><label class="text_2rem" for="">Número de factura</label><input class="modal_input" type="text"></div>
+                  <div class="info_text_2"><label class="text_2rem" for="">Motivo</label> <input class="modal_input" type="text"></div>
+                </div> 
+                <div class="modal_footer">
+                    <button (click)="openAddModal()" class="btn btn_rebuild">Reconstruir</button>
+                  <button (click)="openAddModal()" class="btn btn_annulment">Anular</button>
+                </div>
+                
+            
+          </div>
+      
+          
+        </div>
+      
+      </div>
+      
+</div>

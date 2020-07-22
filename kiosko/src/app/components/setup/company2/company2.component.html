@@ -1,0 +1,53 @@
+<div class="content">
+    <div class="top">
+        <img class="backIcon" src="./assets/icon/png/backIcon.png" routerLink="/company1" routerDirection="root" alt="" srcset="">
+      </div>
+      <div class="mid-top">
+        <a class="firstText">Identifiquemos<br> tu comercio</a>
+      </div>
+      
+      <div class="mid">
+      
+        <Div class="inputs">
+          <label for="" class="formulario__label">identificación</label><input type="text" class="form__input" id="id">
+          <label for="" class="formulario__label">Dirección</label><input type="text" class="form__input" id="address">
+          <label for="" class="formulario__label">Razón social</label><input type="text" class="form__input" id="tradename">
+          <label for="" class="formulario__label">Frase al pie de factura</label><input type="text" class="form__input" id="footercheck">
+        </Div>
+      
+          <div id="dropdown-identification" class="dropdown" (click)="showIdentificationOptions()">
+              <div class="dropdown-trigger">
+                <button class="button dropdown-btn" aria-haspopup="true" aria-controls="dropdown-menu3">
+                  <span class="text-dropdown" id="identification-selected">Tipo</span>
+                  <span class="icon-background">
+                    <img class="arrowDown" src="./assets/icon/png/arrowDown.png" alt="" srcset="">
+              </span>
+                </button>
+              </div>
+              <div class="dropdown-menu" id="dropdown-menu3" role="menu">
+                <div class="dropdown-content">
+                  <a class="dropdown-item dropdown-identification-item">
+                    Céd. Física
+                  </a>
+                  <a class="dropdown-item dropdown-identification-item">
+                    Céd. Jurídica
+                  </a>
+                  <a class="dropdown-item dropdown-identification-item">
+                    NITE
+                  </a>
+                  <a class="dropdown-item dropdown-identification-item">
+                    DIMEX
+                  </a>
+                </div>
+              </div>
+            </div>
+      
+      </div>
+      
+      <div class="footer">
+        <div class="next" routerLink="/infographic" routerDirection="root">
+          <p >Siguiente</p>
+          <img class="nextIcon" src="./assets/icon/png/nextIcon.png" alt="" srcset="">
+        </div>
+      </div>      
+</div>

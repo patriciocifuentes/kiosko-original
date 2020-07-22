@@ -1,0 +1,293 @@
+<div class="content">
+    <div class="header-menu">
+        <div class="back" (click)="goBack()">
+            <img class="backIcon" src="./assets/icon/png/backIcon.png" alt="" srcset="">
+        </div>
+        <div class="header_title">
+            CIERRE DE CAJA
+        </div>
+        <div class="quit">
+            <button (click)="openAddModal()" class="btn btn_green">
+                <img class="checkIcon" src="./assets/icon/png/checkIcon.png" alt="" srcset="">
+            </button>
+        </div>
+    </div>
+
+    <!-- <div class="scroll_content"> -->
+        <ion-content>
+
+        
+        <div class="total_header">
+                <p class="firstText">DINERO DE CAJA</p>
+                <p class="secondText">TOTAL</p>
+        </div>
+        <div class="total_description">
+            <div class="money_description">
+                <p class="currency_text">COLONES...........................&nbsp;</p>
+                <input type="text" id="amount-colons">
+            </div>
+            <div class="money_description" id="dollar_money_description">
+                <p class="currency_text">DOLARES............................&nbsp;</p>
+                <input type="text" id="amount-dollars">
+            </div>
+        </div>
+    
+        <div class="cash_count_content">
+            <div class="cash_count_header">
+                <p>DENOMINACIONES EN CAJA</p>
+                <img class="arrowUpICon" src="./assets/icon/png/arrowUp.png" alt="" srcset="">
+            </div>
+            <div class="cash_count_hide_options">
+                <p class="close_text">COLONES:</p>
+                <div class="cash_count_colons_coins">
+                    <div class="cash_count_colons_container">
+                        <button class="btn btn_coin">₡5</button>
+                        <input type="text">
+                    </div>
+                    <div class="cash_count_colons_container">
+                        <button class="btn btn_coin">₡10</button>
+                        <input type="text">
+                    </div>
+                    <div class="cash_count_colons_container">
+                        <button class="btn btn_coin">₡25</button>
+                        <input type="text">
+                    </div>
+                    <div class="cash_count_colons_container">
+                        <button class="btn btn_coin">₡50</button>
+                        <input type="text">
+                    </div>
+                    <div class="cash_count_colons_container">
+                        <button class="btn btn_coin">₡100</button>
+                        <input type="text">
+                    </div>
+                    <div class="cash_count_colons_container">
+                        <button class="btn btn_coin">₡500</button>
+                        <input type="text">
+                    </div>
+                </div>
+    
+                <div class="cash_count_colons_coins">
+                    <div class="cash_count_colons_container">
+                        <button class="btn btn_bill">₡1000</button>
+                        <input type="text">
+                    </div>
+                    <div class="cash_count_colons_container">
+                        <button class="btn btn_bill">₡2000</button>
+                        <input type="text">
+                    </div>
+                    <div class="cash_count_colons_container">
+                        <button class="btn btn_bill">₡5000</button>
+                        <input type="text">
+                    </div>
+                    <div class="cash_count_colons_container">
+                        <button class="btn btn_bill">₡10000</button>
+                        <input type="text">
+                    </div>
+                    <div class="cash_count_colons_container">
+                        <button class="btn btn_bill">₡20000</button>
+                        <input type="text">
+                    </div>
+                    <div class="cash_count_colons_container">
+                        <button class="btn btn_bill">₡50000</button>
+                        <input type="text">
+                    </div>
+                </div>
+
+                <p class="close_text">DOLARES:</p>
+                <div class="cash_count_colons_coins">
+                        <div class="cash_count_colons_container">
+                            <button class="btn btn_bill">$1</button>
+                            <input type="text">
+                        </div>
+                        <div class="cash_count_colons_container">
+                            <button class="btn btn_bill">$5</button>
+                            <input type="text">
+                        </div>
+                        <div class="cash_count_colons_container">
+                            <button class="btn btn_bill">$10</button>
+                            <input type="text">
+                        </div>
+                        <div class="cash_count_colons_container">
+                            <button class="btn btn_bill">$20</button>
+                            <input type="text">
+                        </div>
+                        <div class="cash_count_colons_container">
+                            <button class="btn btn_bill">$50</button>
+                            <input type="text">
+                        </div>
+                        <div class="cash_count_colons_container">
+                            <button class="btn btn_bill">$100</button>
+                            <input type="text">
+                        </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="close_info">
+            <div class="lineal_form">
+                <p class="date">Fecha</p>
+                <p class="date">22/09/2019</p>
+            </div>
+            <div class="lineal_form">
+                <p class="date">Caja</p>
+                <p class="date">#1</p>
+            </div>
+            <div class="lineal_form">
+                <p class="date">Tipo</p>
+                <p class="date">$582</p>
+            </div>
+            <div class="lineal_form">
+                <p class="date">Usuario</p>
+                <p class="date">ibsAdmin</p>
+            </div>
+        </div>
+
+        <hr>
+        <p class="payment_type_title">FORMAS DE PAGO</p>
+        <hr class="no_margin">
+
+        <div class="close_info">
+            <p class="lineal_form">Tipo:</p>
+                <div class="lineal_form">
+                    <p class="date">EFECTIVO-COLONES</p>
+                    <p class="date">99999.99</p>
+                </div>
+                <div class="lineal_form">
+                    <p class="date">EFECTIVO-DOLARES</p>
+                    <p class="date">999.99</p>
+                </div>
+                <div class="lineal_form mb-5 flex-end">
+                    <p class="date">*(999.99)</p>
+                </div>
+                <div class="lineal_form">
+                    <p class="date">TARJETAS EXTERNO-C</p>
+                    <p class="date">99999.00</p>
+                </div>
+                <div class="lineal_form">
+                    <p class="date">TARJETAS-EXTERNO-D</p>
+                    <p class="date">999999.00</p>
+                </div>
+            </div>
+
+            <hr>
+                <div class="payment_type_title lineal_form">
+                    <p class="date">TOTAL VENTA</p>
+                    <p class="date">999999.00</p>
+                </div>
+            <hr class="no_margin">
+
+            <p class="check_detail_text payment_type_title mt-15">Detalle de Caja</p>
+            <hr class="no_margin">
+
+            <div class="column-flex">
+                <div class="lineal_form flex-title">
+                    <p class="">COLONES</p>
+                    <p class="">DOLARES</p>
+                </div>
+                
+                <div class="lineal_form row-title">
+                    <div class="col-1">Apertura:</div>
+                    <div class="col-2">9999</div>
+                    <div class="col-3">999</div>  
+                </div>
+                <div class="lineal_form row-title">
+                    <div class="col-1">Efectivo:</div>
+                    <div class="col-2">9999</div>
+                    <div class="col-3">999</div>  
+                </div>
+                <div class="lineal_form row-title">
+                    <div class="col-1">Ingresos:</div>
+                    <div class="col-2">9999</div>
+                    <div class="col-3">999</div>  
+                </div>
+            </div>
+
+        
+
+            <hr>
+            <div class="column-flex">
+                <div class="lineal_form row-title">
+                    <div class="col-1">Subtotal:</div>
+                    <div class="col-2">9999</div>
+                    <div class="col-3">999</div>  
+                </div>
+                <div class="lineal_form row-title">
+                    <div class="col-1">Egresos:</div>
+                    <div class="col-2">9999</div>
+                    <div class="col-3">999</div>  
+                </div>
+            </div>
+            
+            <hr>
+            <div class="column-flex">
+                <div class="lineal_form row-title">
+                    <div class="col-1">Total:</div>
+                    <div class="col-2">9999</div>
+                    <div class="col-3">999</div>  
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="column-flex">
+                <div class="lineal_form row-title">
+                    <div class="col-1">Arqueo:</div>
+                    <div class="col-2">9999</div>
+                    <div class="col-3">999</div>  
+                </div>
+            </div>
+            <hr class="">
+            <div class="column-flex">
+                <div class="lineal_form row-title">
+                    <div class="col-1">Diferencia:</div>
+                    <div class="col-2">9999</div>
+                    <div class="col-3">999</div>  
+                </div>
+            </div>
+            <hr>    
+            <div class="check_detail mt-2">
+                <p class="lineal_form mt-15">Impuestos:</p>
+            </div>
+            <hr class="mt-3">
+            <div class="column-flex">
+                <div class="lineal_form row-title end-title">
+                    <div class="col-1">IVA:</div>
+                    <div class="col-2">9999</div>
+                </div>
+            </div>
+
+
+            <button class="btn btn_print">Imprimir</button>
+
+            
+        </ion-content>
+     <!-- </div> Aqui termina contenido-->
+    
+    <div id="add_modal" class="modal">
+        <div class="modal-content">
+          <span class="close" (click)="hideAddModal()">&times;</span>
+          <div class="modal_title">
+           
+          </div>
+          <div class="modal_body">
+                <h2 class="title">¿Querés</h2>
+                <h2 class="title">Cerrar Caja?</h2>
+                <div class="modal_footer">
+                  <button (click)="hideAddModal()" class="btn btn_footer btn_no">No</button>
+                  <button class="btn btn_footer btn_yes">Sí</button>
+                </div>
+                
+            
+          </div>
+    
+          
+        </div>
+    
+    </div>
+    
+</div>
+

@@ -1,0 +1,160 @@
+.content{
+        padding-left: 9%;
+    margin-right: 6%;
+}
+.top{
+    margin-top: 5%;
+    margin-right: 6%;
+    display: flex;
+}
+
+.addIcon{
+    color:  #A3D7D9;
+    margin-right: 0%;
+    width: 15px;
+    height: 15px;
+}
+
+.firstText{
+    font-family: Mada;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #455A64;
+    margin-left: 18%;
+}
+
+.search{
+    margin-top: 7%;
+    margin-left: 3%;
+ }
+ .search_text{
+    padding-left: 25px;
+    width: 290px;
+    height: 27px;
+    background: #F9F9F9;
+ }
+ 
+ .searchIcon{
+     width: 14px;
+     height: 14px;
+     position: absolute;
+     margin-top: 1.5%;
+     margin-left: 1.5%;
+ }
+
+ .content_table{
+     overflow: scroll;
+     margin-top: 7%;
+ }
+ 
+.table_title{
+    font-family: Mada;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 19px;
+    background: #F4F4F4;
+    color: #455A64;
+    height:37px;
+    border-bottom: 1px solid #DADADA;
+}
+
+td.id, td.date{
+    padding-top: 4.5%;
+}
+
+.table_info{
+    font-family: Mada;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 19px;
+    color: #455A64;
+    height: 81px;
+}
+
+.content table td, .content table th {
+    vertical-align: middle;
+    padding-left: 9%;
+}
+
+.details{
+    color:  #A3D7D9;
+    padding-right: 0;
+}
+
+td{
+    font-size: 15px;
+ }
+tr{
+    height: 10px;
+}
+
+.modal-content{
+    width: 290px;
+    background: #fff;
+}
+
+.form_1{
+    display: flex;
+    flex-direction: column;
+    margin-top: 21%;
+}
+.info_text_1, .info_text_2{
+    display: flex;
+    flex-direction: column;
+}
+
+.info_text_1, .info_text_2 input{
+    width: 209px;
+}
+label{
+    font-family: Mada;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 20px;
+    color: black;
+    font-weight: 500;
+    height: 20px;
+}
+
+.modal_input{
+    background: white;
+    margin-bottom: 13%;
+    margin-top: -2%;
+    width: 209px;
+}
+
+.modal_footer{
+    display: flex;
+    justify-content: space-between; 
+}
+
+.btn_footer{
+    width:210px;
+    height: 26px;
+}
+
+.btn_rebuild{
+    width:105px;
+    height: 26px;
+    background: #F4F4F4;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    line-height: 131.25%;
+    color: #8F8F8F;
+    margin-right: 2%;
+    font-size: 13px;
+    border-radius: 20px;
+}
+
+.btn_annulment{
+    width:105px;
+    height: 26px;
+    margin-left: 2%;
+    font-size: 13px;
+    border-radius: 20px;
+}

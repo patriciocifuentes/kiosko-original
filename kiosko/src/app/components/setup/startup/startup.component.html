@@ -1,0 +1,58 @@
+<div class="content">
+  <div class="logo">
+      <img class="kioskoLogo" src="./assets/icon/png/kioskoLogo.png">
+  </div>
+  <div class="mainContent">
+      <div class="dropdowns">
+          <div id="dropdown-country" class="dropdown" (click)= "showCountryOptions()">
+            <div class="dropdown-trigger">
+              <button class="button dropdown-btn" aria-haspopup="true" aria-controls="dropdown-menu3">
+                <span class="text-dropdown" id="country-selected">País</span>
+                <span class="icon-background">
+                 
+                      <img class="arrowDown" src="./assets/icon/png/arrowDown.png" alt="" srcset="">
+                </span>
+              </button>
+            </div>
+            <div class="dropdown-menu" id="dropdown-menu3" role="menu">
+              <div class="dropdown-content">
+                <a class="dropdown-item dropdown-country-item">
+                  Costa Rica
+                </a>
+                <a class="dropdown-item dropdown-country-item">
+                    Guatemala
+                  </a>
+              </div>
+            </div>
+          </div>
+          
+          <div id="dropdown-language" class="dropdown" (click)="showLanguageOptions()">
+            <div class="dropdown-trigger">
+              <button class="button dropdown-btn" aria-haspopup="true" aria-controls="dropdown-menu3">
+                <span class="text-dropdown" id="language-selected">Idioma</span>
+                <span class="icon-background">
+
+                  <img class="arrowDown" src="./assets/icon/png/arrowDown.png" alt="" srcset="">
+            </span>
+              </button>
+            </div>
+            <div class="dropdown-menu" id="dropdown-menu3" role="menu">
+              <div class="dropdown-content">
+                <a class="dropdown-item dropdown-language-item">
+                  Español
+                </a>
+                <a class="dropdown-item dropdown-language-item">
+                  Inglés
+                </a>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+    <div class="buttonsContent">
+      <button class="btn btn-signup ml-6 mr-6" routerLink="/adminsignup" routerDirection="root">Crear cuenta</button>
+      <button class="btn btn-login mt-4 ml-6 mr-6" routerLink="/login" routerDirection="root">Iniciar Sesión</button>
+    </div>
+  </div>
+  
+</div>

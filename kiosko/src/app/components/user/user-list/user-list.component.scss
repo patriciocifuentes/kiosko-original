@@ -1,0 +1,152 @@
+.content{
+    margin-left: 6%;
+    margin-right: 6%;
+}
+.top{
+    margin-top: 5%;
+    margin-right: 6%;
+    display: flex;
+}
+
+.addIcon{
+    color: #16CCCF;
+    margin-right: 0%;
+}
+
+.firstText{
+    font-family: Mada;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #455A64;
+    margin-left: 28%;
+}
+
+.search{
+    margin-top: 7%;
+    margin-left: 3%;
+}
+
+
+.searchIcon{
+    position: absolute;
+    margin-top: 1.5%;
+    margin-left: 1.5%;
+}
+
+.content_table{
+    overflow: scroll;
+    margin-top: 7%;
+}
+
+.table_title{
+    font-family: Mada;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 19px;
+    height:37px;
+    background: #F4F4F4;
+    color: #455A64;
+}
+
+.table_info{
+    height: 81px;
+}
+
+td{
+    font-size: 15px;
+}
+
+tr{
+    height: 10px;
+}
+
+.content_table table td, .content_table table th {
+    vertical-align: middle;
+    padding-left: 8%;
+}
+
+.name{
+    font-family: Mada;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    color: #455A64;
+}
+
+.position{
+    font-family: Mada;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    color: #C4C4C4;
+    padding-top: 6%;
+}
+
+.form_1{
+    display: flex;
+    flex-direction: column;
+    margin-top: 21%;
+}
+.info_text_1, .info_text_2, .info_text_3{
+    display: flex;
+    flex-direction: row;
+}
+
+.info_text_1, .info_text_2, .info_text_3 input{
+    width: 230px;
+}
+
+label{
+    font-family: Mada;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 17px;
+    color: black;
+    font-weight: 500;
+}
+
+
+.helpIcon{
+    width: 23px;
+    height: 23px;
+    position: absolute;
+    top: 180px;
+    right: 57px;
+}
+.modal_input{
+    background: #F4F4F4;
+    margin-bottom: 10%;
+    margin-top: -9%;
+}
+
+.btn_footer{
+    width:195px;
+    height: 30px;
+    font-size: 1.2rem;
+}
+
+.pointsIcon{
+    width: 25px;
+    height: 7px;
+    margin-left:  11%;
+    margin-top: 2.3%;
+}
+
+.forgot_pin{
+    margin-top: -2%;
+    position: absolute;
+}

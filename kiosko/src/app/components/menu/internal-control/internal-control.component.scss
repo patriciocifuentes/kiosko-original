@@ -1,0 +1,107 @@
+.top{
+    margin:6%;
+    display: flex;
+    margin-bottom: 12%;
+}
+
+.header_title{
+    font-family: Mada;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    text-align: center;
+    color: #455A64;
+    letter-spacing: 5px;
+    margin-left: 102px;
+}
+
+.check_icon{
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    background:  #455A64;
+    margin-top: 42px;
+    margin-left: 30px;
+    margin-bottom: -10px;
+}
+
+.checkVector{
+    width: 23px;
+    height: 26px;
+    margin-left: 5px;
+    margin-top: 4px;
+}
+
+.colon{
+    color: #455A64;
+    font-family: Mada;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 6px;
+    line-height: 8px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top:72px;
+    right: 48px;
+}
+
+
+.menu_item{
+    display: flex;
+    width: 80%;
+    margin: 5px auto 5px;
+    height: 50px;
+
+}
+
+.menu_item_text{
+    font-size: 15px;
+}
+
+.icon{
+    margin-top: 15px;
+    margin-right: 27px;
+    color: #455A64;
+}
+
+.line{
+    background: #DADADA;
+    height: 1px;
+    margin: 0;
+}
+
+.userIcon{
+    height: 26px;
+    width: 26px;
+}
+
+.reportIcon{
+    height: 27px;
+    width: 21px;
+}
+
+.clientIcon{
+    height: 32px;
+    width: 26px;
+}
+
+.cashierIcon{
+    height: 18px;
+    width: 19px;
+}
+
+.discountIcon{
+    height: 17px;
+    width: 18px;
+}
+
+.helpIcon{
+    height: 25px;
+    width: 24px;
+}

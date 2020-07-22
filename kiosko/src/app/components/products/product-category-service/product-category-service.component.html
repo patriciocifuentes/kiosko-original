@@ -1,0 +1,243 @@
+<div class="content">
+
+  <div class="header-menu">
+      <div class="back">
+        <img class="backIcon" src="./assets/icon/png/backIcon.png" alt="" srcset="">
+      </div>
+      <div class="quit">
+        <p href="">Omitir</p>
+      </div>
+    </div>
+
+  <div class="informationText">
+      <div class="title-product">¿Qué productos <br> vas a vender?</div>
+      <div class="subtitle-product">Agregá los productos y categorías <br> de tu comercio</div>
+  </div>   
+    
+  <div class="modal-container">
+
+      <div class="header-modal">
+        <a (click)="showCategoryModal()" class="tag-product"><p class="tag-text">Categoría</p></a>
+        <a (click)="showProductModal()" class="tag-product"><p class="tag-text">Producto</p></a>
+        <a (click)="showServiceModal()" class="tag-product"><p class="tag-text">Servicio</p></a>
+      </div>
+
+      <div class="modal-content" id="modal-product">
+          <label for="" class="formulario__label label-text">Nombre</label>
+          <input type="text" placeholder="Ej. Bebidas" class="form__input" id="name">
+
+          <label for="" class="formulario__label label-text">Código</label>
+          <input type="text" placeholder="XXXXXXX" class="form__input" id="name">
+          <img class="barcode-icon" src="./assets/icon/png/barcode.png">
+
+
+          <input type="text" placeholder="$00.00" class="form__input price-Input" id="name">
+
+          <button class="btn btn-chip">
+            <img class="btn-icon" src="/assets/icon/png/addCircle.png">
+            <p>Modificador</p> 
+          </button>
+
+          <div class="dropdown-container">
+              <div id="dropdown-categories" class="dropdown dropdown-categories" (click)="showCategoryOptions()">
+                  <div class="dropdown-trigger">
+                    <button id="dropdown-btn" class="button dropdown-btn" aria-haspopup="true" aria-controls="dropdown-menu3">
+                      <span class="text-dropdown" id="category-selected">
+                          <div id="select-category" class="color_Square_Text dropdown-categories-item color1"></div>
+                          <p>Color</p>
+                      </span>
+                      <span id="icon-background" class="icon-background">
+                          <img class="arrowDown" src="./assets/icon/png/arrowDown.png">
+                      </span>
+                    </button>
+                  </div>
+                  <div class="dropdown-menu" id="dropdown-menu3" role="menu">
+                    <div class="dropdown-content">
+                      <a class="dropdown-item dropdown-category-item">
+                        <div id="" class="color_Square_Item dropdown-category-item color1"></div>
+                        <p>Categoría X</p>
+                      </a>
+                      <a class="dropdown-item dropdown-category-item">
+                        <div id="" class="color_Square_Item dropdown-category-item color5"></div>
+                        <p>Categoria Y</p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="tax-container">
+                    <label for="" class="label-dropdown ">I.V.A</label>
+                    <div id="dropdown-Tax" class="dropdown dropdown-Tax" (click)="showTaxOptions()">
+                        <div class="dropdown-trigger">
+                          <button id="dropdown-btn-tax" class="button dropdown-btn" aria-haspopup="true" aria-controls="dropdown-menu3">
+                            <span class="text-dropdown" id="select-tax">
+                                <p>13%</p>
+                            </span>
+                            <span id="icon-background" class="icon-background">
+                                <img class="arrowDown" src="./assets/icon/png/arrowDown.png">
+                            </span>
+                          </button>
+                        </div>
+                        <div class="dropdown-menu" id="dropdown-menu3" role="menu">
+                          <div class="dropdown-content">
+                            <a class="dropdown-item dropdown-tax-item">
+                              <p>13%</p>
+                            </a>
+                            <a class="dropdown-item dropdown-tax-item">
+                              <p>0%</p>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                
+                
+      
+          </div>
+          
+
+          <div class="footer_card">
+
+             
+
+            <button class="btn btn-footer">Crear</button>
+          </div>
+
+      </div>
+
+      <div class="modal-content" id="modal-service">
+          <label for="" class="formulario__label label-text">Nombre</label>
+          <input type="text" placeholder="Ej. Corte de pelo" class="form__input" id="name">
+
+          <label for="" class="formulario__label label-text">Código</label>
+          <input type="text" placeholder="XXXXXXX" class="form__input" id="name">
+          <img class="barcode-icon" src="./assets/icon/png/barcode.png">
+
+
+          <input type="text" placeholder="$00.00" class="form__input price-Input" id="name">
+
+          <button class="btn btn-chip"><img class="btn-icon" src="./assets/icon/png/addCircle.png" alt="" srcset="">Modificador</button>
+
+          <div class="dropdown-container">
+              <div id="dropdown-categories" class="dropdown dropdown-categories" (click)="showCategoryOptions()">
+                  <div class="dropdown-trigger">
+                    <button id="dropdown-btn" class="button dropdown-btn" aria-haspopup="true" aria-controls="dropdown-menu3">
+                      <span class="text-dropdown" id="category-selected">
+                          <div id="select-category" class="color_Square_Text dropdown-categories-item color1"></div>
+                          <p>Color</p>
+                      </span>
+                      <span id="icon-background" class="icon-background">
+                          <img class="arrowDown" src="./assets/icon/png/arrowDown.png">
+                      </span>
+                    </button>
+                  </div>
+                  <div class="dropdown-menu" id="dropdown-menu3" role="menu">
+                    <div class="dropdown-content">
+                      <a class="dropdown-item dropdown-category-item">
+                        <div id="" class="color_Square_Item dropdown-category-item color1"></div>
+                        <p>Categoría X</p>
+                      </a>
+                      <a class="dropdown-item dropdown-category-item">
+                        <div id="" class="color_Square_Item dropdown-category-item color5"></div>
+                        <p>Categoria Y</p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="tax-container">
+                    <label for="" class="label-dropdown ">I.V.A</label>
+                    <div id="dropdown-Tax" class="dropdown dropdown-Tax" (click)="showTaxOptions()">
+                        <div class="dropdown-trigger">
+                          <button id="dropdown-btn-tax" class="button dropdown-btn" aria-haspopup="true" aria-controls="dropdown-menu3">
+                            <span class="text-dropdown" id="select-tax">
+                                <p>13%</p>
+                            </span>
+                            <span id="icon-background" class="icon-background">
+                                <img class="arrowDown" src="./assets/icon/png/arrowDown.png">
+                            </span>
+                          </button>
+                        </div>
+                        <div class="dropdown-menu" id="dropdown-menu3" role="menu">
+                          <div class="dropdown-content">
+                            <a class="dropdown-item dropdown-tax-item">
+                              <p>13%</p>
+                            </a>
+                            <a class="dropdown-item dropdown-tax-item">
+                              <p>0%</p>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                
+                
+      
+          </div>
+          
+
+          <div class="footer_card">
+
+             
+
+            <button class="btn btn-footer">Crear</button>
+          </div>
+
+      </div>
+
+      <div id="modal-category" class="modal-content">
+        <label for="" class="formulario__label label-text">Nombre</label>
+        <input type="text" placeholder="Ej. Bebidas" class="form__input" id="name">
+        
+        
+        <div id="dropdown-color" class="dropdown dropdown-color" (click)="showColorOptions()">
+          <div class="dropdown-trigger">
+            <button id="dropdown-btn" class="button dropdown-btn" aria-haspopup="true" aria-controls="dropdown-menu3">
+              <span class="text-dropdown" id="color-selected">
+                  <div id="color-select-square" class="color_Square_Text dropdown-color-item color1"></div>
+                  <p>Color</p>
+              </span>
+              <span id="icon-background" class="icon-background">
+                  <img class="arrowDown" src="./assets/icon/png/arrowDown.png">
+              </span>
+            </button>
+          </div>
+          <div class="dropdown-menu" id="dropdown-menu3" role="menu">
+            <div id="dropdown-content-colors" class="dropdown-content">
+                <div class="dropdown-item">
+                  <div class="colorSquare color1 dropdown-color-item"></div>
+                  <div class="colorSquare color2 dropdown-color-item"></div>
+                  <div class="colorSquare color3 dropdown-color-item"></div>
+                  <div class="colorSquare color4 dropdown-color-item"></div>
+                  <div class="colorSquare color5 dropdown-color-item"></div>
+                  <div class="colorSquare color6 dropdown-color-item"></div>
+                  <div class="colorSquare color7 dropdown-color-item"></div>
+                  <div class="colorSquare color8 dropdown-color-item"></div>
+                  <div class="colorSquare color9 dropdown-color-item"></div>
+                  <div class="colorSquare color10 dropdown-color-item"></div>
+                  <div class="colorSquare color11 dropdown-color-item"></div>
+                  <div class="colorSquare color12 dropdown-color-item"></div>
+                  <div class="colorSquare color13 dropdown-color-item"></div>
+                  <div class="colorSquare color14 dropdown-color-item"></div>
+                  <div class="colorSquare color15 dropdown-color-item"></div>
+                </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer_card">
+            <button class="btn btn-footer">Crear</button>
+        </div>
+
+      </div>
+
+  </div>
+  
+</div>
+
+<div class="footer">
+  <div class="next">
+    <p>Siguiente</p>
+    <img class="nextIcon" src="./assets/icon/png/nextIcon.png">
+  </div>
+</div>

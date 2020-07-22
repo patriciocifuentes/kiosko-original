@@ -1,0 +1,97 @@
+<div class="content">
+   
+ <div class="top"> 
+    <img class="backIcon" src="./assets/icon/png/backIcon.png" alt="" srcset="">
+    <p class="header_title">CAJA</p>
+  </div>
+
+ <div class="mid-top">
+    <a class="firstText">DINERO EN CAJA</a>
+    <a class="secondText">TOTAL</a>
+  </div>
+
+  <div class="mid">
+    <div class=cashier>
+      <a class="currency">COLONES ..........................................&nbsp;</a> 
+      <p class="cash_text">99999</p>
+    </div>
+    <div class=cashier>
+      <a class="currency">DOLARES ..........................................&nbsp;</a> 
+      <p class="cash_text">$99</p> 
+    </div>
+    
+  </div>
+
+
+  <div id="add_modal" class="modal">
+    <div class="modal-content">
+      <span class="close" (click)="hideAddModal()">&times;</span>
+      <div class="modal_title">
+        Agregar Dinero
+      </div>
+      <div class="modal_body">
+          <div class="form_inline">
+              <label class="text_2rem" for="">Total</label>
+              <label class="text_2rem" for="">$9999</label>
+            </div> 
+            <div class="form_inline">
+              <label id="amoung_label" class="text_2rem" for="">Monto</label>
+              <input class="input_Price" placeholder="₡0" type="text">
+            </div> 
+            <hr>
+            <div class="form_inline">
+              <label class="text_2rem" for="">Restante</label>
+              <label class="text_2rem" for="">$9999</label>
+            </div> 
+            <div class="modal_footer">
+              <button class="btn btn_footer">Confirmar</button>
+            </div>
+            
+        
+      </div>
+
+      
+    </div>
+
+  </div>
+
+  <div id="out_modal" class="modal">
+      <div class="modal-content">
+        <span class="close" (click)="hideOutModal()">&times;</span>
+        <div class="modal_title">
+          Retirar Dinero
+        </div>
+        <div class="modal_body">
+            <div class="form_inline">
+                <label class="text_2rem" for="">Total</label>
+                <label class="text_2rem" for="">$9999</label>
+              </div> 
+              <div class="form_inline">
+                <label id="amoung_label" class="text_2rem" for="">Monto</label>
+                <input class="input_Price" placeholder="₡0" type="text">
+              </div> 
+              <hr>
+              <div class="form_inline">
+                <label class="text_2rem" for="">Restante</label>
+                <label class="text_2rem" for="">$9999</label>
+              </div> 
+              <div class="modal_footer">
+                <button class="btn btn_footer">Confirmar</button>
+              </div>
+        </div> 
+      </div>
+  </div>
+
+
+
+
+  <div class="footer">
+    <button (click)="openAddModal()" class="btn btn_border_20">
+      <img class="addIcon" src="./assets/icon/png/addIcon.png" alt="" srcset="">
+       Agregar dinero</button>
+    <button (click)="openOutModal()" class="btn btn_border_20 btn_out">
+      <img class="lessIcon" src="./assets/icon/png/lessIcon.png" alt="" srcset="">
+      Retirar dinero</button>
+  </div>
+
+</div>

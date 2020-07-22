@@ -1,0 +1,102 @@
+<div class="content_list">
+  
+<div class="top">
+<img class="backIcon" src="./assets/icon/png/backIcon.png" alt="" srcset="">
+<a class= "firstText">D E S C U E N T O S</a>
+<img class="addIcon" src="./assets/icon/png/addIcon.png" alt="" srcset="">
+</div>
+
+<div class="mod_delete">
+<button (click)="openAddModal()" class="modify_discount">
+  <img class="modifyIcon" src="./assets/icon/png/modifyIcon.png" alt="" srcset="">
+  <a class="mod_delete_texts">Modificar</a>
+</button>
+<button class="delete_discount">
+  <img class="deleteIcon" src="./assets/icon/png/deleteIcon.png" alt="" srcset="">
+  <a class="mod_delete_texts">Eliminar</a>
+</button>
+</div>
+
+
+<div class="search">
+<img class="searchIcon" src="./assets/icon/png/searchIcon.png" alt="" srcset="">
+<input class="search_text"type="text" placeholder="Búsqueda">
+</div>
+
+<div class="content">
+<table>
+  <tr class="table_title">
+    <td> </td>
+    <td>Nombre</td>
+    <td>Porcentaje</td>
+  </tr>
+  <tr id="table_info" id="table_info">
+    <td> 
+      <div class="container">
+        <div class="round">
+          <input type="checkbox" id="checkbox" />
+          <label for="checkbox"></label>
+        </div>
+      </div>
+    </td>
+    <td id="name">Happy hour</td>
+    <td id="percentage_date" class="percentage_date"><p id="percentage" class="percentage">30%</p><p id="day" class="day">Martes</p></td>
+    <hr>
+  </tr>
+</table>    
+</div>
+
+<div id="add_modal" class="modal">
+<div class="modal-content">
+  <span class="close" (click)="hideAddModal()">&times;</span>
+  <div class="modal_body">
+      <div class="input_container">
+          <input type="text" class="form__input percentage_input">
+          <span class="percentage_icon">%</span>
+        </div>
+      <div class="form_inline form_1">
+          <label for="" class="formulario__label label-text">Nombre del descuento</label>
+          <input type="text" placeholder="Ej. Happy Hour" class="form__input modal_input" id="discount_name">  
+      </div> 
+        <div class="form_inline form_2">
+            <div class="container_modal">
+              <div class="round">
+                <input type="checkbox" id="checkbox_exoneration" />
+                <label for="checkbox_exoneration"></label>
+              </div>
+              <div class="permanent">Permanente</div>
+            </div> 
+        </div> 
+        <hr>
+        <div class="form_inline">
+            <label for="" class="formulario__label label-text">Fecha</label>
+            <input type="text" placeholder="dd" class="form__input sm_input" id="day">
+            <p class="slash">/</p>
+            <input type="text" placeholder="mm" class="form__input sm_input" id="month">     
+        </div> 
+
+        <div class="form_inline">
+            <label for="" class="formulario__label label-text">Hora</label>
+            <input type="text" placeholder="00" class="form__input sm_input" id="hour">
+            <p class="slash">:</p>
+            <input type="text" placeholder="00" class="form__input sm_input" id="minute">
+            <p class="slash"> a </p>
+            <input type="text" placeholder="00" class="form__input sm_input" id="hour2">
+            <p class="slash">:</p>
+            <input type="text" placeholder="00" class="form__input sm_input" id="minute2">
+        </div>     
+
+        <div class="modal_footer">
+          <button class="btn btn_cancel">No agregar</button>
+          <button class="btn btn_Add">Agregar a productos</button>
+        </div>
+        
+    
+  </div>
+
+  
+</div>
+
+</div>
+
+</div>

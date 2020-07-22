@@ -1,0 +1,55 @@
+.top{
+    margin-top: 6%;
+    margin-left: 6%;
+}
+
+.menuBtn{
+    width: 19px;
+    height: 15px;
+}
+
+.mid-top{
+   margin-top: -5%; 
+   width: 142px;
+   height: 38px;
+   margin-left: 42%;
+   margin-top: -7%;
+}
+
+.firstText{
+    font-family: Mada;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 131.25%;
+    display: flex;
+    color: #335980;
+}
+
+.circules{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 25%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.circule{
+    background: #C0CCD7;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    width: 52px;
+    margin-left: 2%;
+    height: 52px;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 40px;
+    display: flex;
+    color: #335980;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}

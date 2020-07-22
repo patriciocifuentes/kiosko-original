@@ -1,0 +1,64 @@
+.header-menu{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 6%;
+}
+
+.modal-container{
+    width: 70%;
+    height: 36vh;
+}
+
+.modal-content{
+  width: 90%;
+  margin: 0;
+}
+
+.form__input{
+  background: #F4F4F4;
+}
+
+.check_button_container{
+  margin-top: 1.5rem;
+}
+
+.check_button_container input[type="text"]{
+  background: #F4F4F4;
+}
+
+.modifier_content{
+  display: flex;
+}
+
+.closeIcon{
+  height: 20px;
+  width: 15px;
+  padding: 42px 14px 0 12px;
+}
+
+.input_Name{
+  width: 180px;
+}
+
+
+.float_button_container{
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.btn_float_add{
+  height: 100px; 
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(180deg, #A3D7D9 0%, #30304C 100%);
+}
+
+.add_icon{
+  height: 60px;
+  width: 50px;
+}
+

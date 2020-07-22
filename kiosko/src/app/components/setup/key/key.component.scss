@@ -1,0 +1,69 @@
+.top{
+    margin-top: 6%;
+    margin-left: 6%;
+}
+
+.mid{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 20%;
+}
+
+.firstText{
+    font-size: 36px;
+    color: #455A64;
+    font-weight: bold;
+    margin-bottom: 5%;
+    line-height: 131.25%;
+}
+.secondText{
+    font-weight: 500;
+    font-size: 15px;
+    color: #759DAA;
+}
+
+.thirdText{
+    margin-top: 30%;
+    color: #799BB6;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.squares{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 20%;
+    margin-bottom: 30%;
+    margin-left: 8%;
+}
+
+.square1, .square2, .square3, .square4, .square5, .square6, .square7, .square8{
+
+    margin-right: 1%;
+    width: 33px;
+    height: 43px;
+}
+
+.minus{
+    width: 16px;
+    height: 30px; 
+    align-items: center;
+    color: #183654;
+    font-family: Mada;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 131.25%;
+    margin-top: -2%;
+}
+
+input{
+    width: 33px;
+    height: 43px;
+    border-radius: 8px;
+    border: 1px solid #97AEB4;
+    box-sizing: border-box;
+    margin-right: 3%;
+}

@@ -1,0 +1,367 @@
+.header_title{
+    font-family: Mada;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #455A64;
+}
+
+.btn{
+    background: #83A7B2;
+}
+
+.header-menu{
+    width: 85%;
+}
+
+.btn_green{
+    width: 50px;
+    height: 28px;
+    display: flex;
+    justify-content: center;
+    background: #8FA928;
+    box-shadow: 0px 4px 4px rgba(89, 134, 178, 0.35);
+    border-radius: 5px;
+    margin-top: -10px;
+}
+
+.backIcon{ 
+    margin-top: 7px;
+}
+
+.checkIcon{
+    height: 12px;
+    width: 16px;
+}
+
+.total_header{
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-between;
+    display: flex;
+    font-family: Mada;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    color: #455A64;
+    margin-top: 10%;
+}
+
+.total_description{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.money_description{
+    display: flex;
+    justify-content: space-between;
+    height: 55px;
+}
+
+.money_description input{
+    width: 30%;
+    background: #FFFFFF;
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 12px;
+    height: 22px;
+}
+.currency_text{
+    width: 67%;
+    font-family: Mada;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: #455A64;
+    margin-top: 15px;
+}
+
+#dollar_money_description{
+    margin-top: 3%;
+}
+
+.cash_count_content{
+    width: 80%;
+    margin: 15% auto 0;
+}
+
+.cash_count_header{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 5px solid #F2F2F2;
+}
+
+.cash_count_header p{
+    font-family: Mada;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+    color: #455A64;
+}
+
+.arrowUpIcon{
+    height: 15px !important;
+    width: 20px !important; 
+}
+
+.btn_coin{
+    height: 35px;
+    width: 35px;
+    font-size: 9px;
+    box-shadow: none;
+    margin-left: 3px;
+}
+
+.colons_input{
+    width: 85px;
+}
+
+.cash_count_colons_coins{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+}
+
+.cash_count_colons_container{
+    width: 80px;
+}
+
+.cash_count_colons_container input{
+    width: 40px;
+    margin-top: 20px;
+    background: #FFFFFF;
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 3px;
+    height: 24px;
+}
+
+.close_text{
+    font-family: Mada;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    color: #455A64;
+    margin-top: 10%;
+}
+
+.cash_count_hide_options{
+    margin-top: 10%;
+}
+
+.btn_bill{
+    width: 45px;
+    height: 20px;
+    border-radius: 0;
+    font-size: 9px;
+    box-shadow: none;
+}
+
+.scroll_content{
+    overflow: scroll;
+    height: 1100px;
+}
+
+hr{
+    border: 0px solid #DADADA;
+    background: #DADADA;
+    margin-top: 10%;
+}
+
+.lineal_form{
+    display: flex;
+    justify-content: space-between;
+    font-family: Mada;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    color: #455A64;
+    margin-bottom: -15px;
+
+}
+
+.close_info{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.payment_type_title{
+    font-family: Mada;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    color: #455A64;
+    width: 80%;
+    margin: 0 auto;
+}
+.no_margin{
+    margin-top: 0;
+}
+
+.mb-5{
+    margin-bottom: 2%;
+}
+
+.flex-end{
+    justify-content: flex-end;
+}
+
+.mt-15{
+    margin-top: 15%;
+}
+
+.check_detail{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.lineal_title{
+    width: 40%;
+    font-family: Mada;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 19px;
+    color: #455A64;
+    text-align: end;
+}
+
+.lineal_form_title{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+.grid-item {
+    padding: 10px;
+    font-size: 30px;
+    text-align: left;
+    font-family: Mada;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 19px;
+    color: #455A64;
+}
+
+.mt-2{
+    margin-top: 2%;
+}
+
+.mt-3{
+    margin-top: 3%;
+}
+
+.btn_print{
+    width: 40%;
+    float: right;
+    margin-bottom: 40px;
+    margin-top: 30px;
+    margin-right: 20px;
+    font-size: 14px;
+    height: 30px;
+    box-shadow: none;
+    background: #A3D7D9;
+}
+
+.title{
+    font-family: Mada;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+    color: #455A64;
+    margin-bottom: 0;
+}
+
+.pl-40{
+    padding-left: 40px;
+}
+
+.content h2{
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.modal-content{
+    height: 40%;
+}
+
+.modal_footer{
+    margin: 0;
+    bottom: 20px;
+    position: absolute;
+    width: 80%;
+    justify-content: space-between;
+    left: 30px;
+}
+
+.modal_body{
+    margin: 20% auto 0;
+}
+
+.btn_footer{
+    height: 30px;
+    width: 47%;
+    font-size: 13px;
+    box-shadow: none;
+}
+
+.btn_no{
+    border: 2px solid #8F8F8F;
+    box-sizing: border-box;
+    border-radius: 40px;
+    background: #F4F4F4;
+    color: #8F8F8F;
+}
+
+ion-content{
+    height: 86vh;
+}
+
+
+.flex-title{
+    width: 70%;
+    justify-content: space-around;
+    margin-left: 25%;
+}
+
+.column-flex{
+    display: flex;
+    flex-direction: column;
+}
+
+.row-title{
+    width: 85%;
+    margin-left: 10%;
+    margin-top: 10px;
+}
+
+.col-1{
+    width: 30%;
+    margin-right: 13px;
+}
+
+.col-2{
+    width: 40%;
+}
+
+.col-3{
+    width: 36%;
+    margin-left: 25px;
+}
+
+.end-title{
+    width: 30%;
+    margin-left: 38px;
+}

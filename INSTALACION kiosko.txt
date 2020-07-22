@@ -1,0 +1,11 @@
+cd ruta proyecto npm install -g ionic@4.8.0
+npm install bulma
+npm install ng2-google-charts --save
+
+node js 10.9.0
+
+cd ruta ionic cordova build android
+
+Si da error
+npm install angular --save
+npm install -g @angular/cli@8.1.3

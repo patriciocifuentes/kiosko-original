@@ -1,0 +1,52 @@
+<ion-content>
+  <img class="backIcon" src="./assets/icon/png/backIcon.png" alt="" srcset="" routerLink="/reportprincipal" routerDirection="root">
+  <img class="arrow_left" src="./assets/icon/png/arrowLeft.png" alt="" srcset="">
+<ion-card class="report_card">
+  <ion-card-header>
+    <ion-card-title>Ventas Diarias</ion-card-title>
+  </ion-card-header>
+  <div class="content_tabs">
+  <div class="mid_top"> 
+      <label for="">Día</label>
+      <label for="">Mes</label> 
+      <label for="">Año</label>
+  </div>
+</div>
+  <ion-card-content>
+
+    <google-chart [data]="curveChart"></google-chart>
+  </ion-card-content>
+</ion-card>
+<img class="arrow_right" routerLink="/notifications" src="./assets/icon/png/arrowRight.png" alt="" srcset="">
+
+<div class="mid">
+  <input class="input_date" id="input_day" placeholder="dd" type="text">
+<p>/</p>
+<input class="input_date" id="input_month" placeholder="mm" type="text">
+<p>/</p>
+<input class="input_date" id="input_year" placeholder="aaaa" type="text">
+</div>
+<button class="btn_action_table_down" id="btn_action_table_down"></button>
+
+<div class="swipe_box" id="swipe_box" >
+  <button class="btn_action_table_up" id="btn_action_table_up"></button>
+    <table class="data_table">
+      <thead class="data_head">
+        <tr>
+          <th class="data_title"> </th>
+          <th class="data_title">FECHA</th>
+          <th class="data_title">VENTAS</th>
+        </tr>
+      </thead>
+      <tbody class="data_body">
+        <tr>
+          <td><div class="pnt_seleccionado data"></div></td>
+          <td class="data">15/10/2019</td>
+          <td class="data">$100</td>
+        </tr>
+      </tbody>
+    </table>
+</div>
+
+
+</ion-content>

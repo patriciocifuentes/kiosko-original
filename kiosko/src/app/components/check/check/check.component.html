@@ -1,0 +1,160 @@
+<div class="content"> 
+<div class="top">
+    <ion-menu-toggle class="menuBtn">
+      <ion-icon class="menuBtn" [src]=menuBtn></ion-icon>
+    </ion-menu-toggle>
+    <div class="scan_icon">  
+      <img class="arrowUp" src="./assets/icon/png/arrowUpDark.png" alt="" srcset="">
+      <p class="scan">Scan</p> 
+    </div>
+    <img (click)="getCategories()" class="arrowLeft" src="./assets/icon/png/arrowLeft.png" alt="" srcset="">
+    <label class="category_name">{{category_name}}</label>
+  </div>
+  
+  <div class="search">
+      <img class="searchIcon" src="./assets/icon/png/searchIcon.png" alt="" srcset="">
+      <input class="search_text"type="text" placeholder="Búsqueda">
+      <img class="addIcon" src="./assets/icon/png/addIconBlue.png" routerLink="/products" routerDirection="root">
+  </div>
+  <div class="content content_category" id="content_category">
+    <div class="category" id="category">
+      <button *ngFor="let item of subcategory_list" (click)="filterCategory(item)" class="btn category_type">{{item.name}}</button>
+      <button class="btn category_type" (click)="updateDatabase()">Insertar productos</button>
+      <button class="btn category_type" (click)="deleteAllDB()">Eliminar productos</button>
+      <!-- <button class="btn category_type">Manga 3 cuartos</button> -->
+    </div>
+  </div>
+ 
+  
+    <ion-content>
+        <div class="cat_prods" >
+          <!-- <button class="cat_prod" id="cat_prod" (click)="openAddModal(item)" *ngFor="let item of product_List">
+              {{item.name}}
+              <p>{{item.price}}</p>
+            </button> -->
+            <button class="cat_prod" id="cat_prod" (click)="sendProductToHeader(item)" *ngFor="let item of product_List">
+              {{item.name}}
+              <p>{{item.price}}</p>
+            </button>
+
+            
+        </div>
+    </ion-content>
+    
+      
+      
+ 
+  <div id="add_modal" class="modal">
+      <div class="modal-content modal-5vh">
+        <span class="close" (click)="closeAddModal()">&times;</span>
+        <div class="modal_body">
+            <div class="form_inline form_1">
+                <p class="poduct_name" id="poduct_name_modal"></p>
+              </div> 
+              <div class="form_inline form_2">
+                
+                <ion-list>
+                    <ion-item class="container_modal" *ngFor="let item of modifiers; let i=index">    <!-- [disabled]="checkedIdx >= 0 && checkedIdx != i" --> 
+                      <ion-label>{{item.name}}</ion-label> 
+                      <ion-checkbox class="checkbox" slot="start" (ionChange)="print($event, item)" ></ion-checkbox>
+                    </ion-item>
+                </ion-list>
+
+              </div>
+              
+              <div class="form_inline form_3">
+                <textarea id="instructions_txt_area"></textarea>
+              </div> 
+              <div class="modal_footer">
+                <button (click)="hideAddModal()" (click)="saveModifiersInfo()" class="btn btn_footer">Aceptar</button>
+              </div>
+        </div>       
+      </div>
+  </div>
+</div>
+
+<!-- (click)="updateDatabase()" -->
+<ion-fab vertical="bottom" horizontal="end" slot="fixed" id="btn_check_detail" >
+    
+    <ion-fab-button class="fab_blue">
+        <ion-icon class="checkIcon" [src]=checkIcon></ion-icon>
+    </ion-fab-button>
+    <ion-badge id="circle_product_check">{{global_quantity}}</ion-badge>
+    
+  </ion-fab> 
+
+  
+  <ion-fab vertical="bottom" horizontal="center" slot="fixed" id="btn_calculator" (click)="openAddModalCalc()" >
+      <ion-fab-button class="fab">
+          <ion-icon class="calcIcon" [src]=calcIcon></ion-icon>
+      </ion-fab-button>
+    </ion-fab> 
+
+    <div id="add_modalCalc" class="modal">
+      <div class="modal-content modal_calc">
+        <span class="close" (click)="hideAddModalCalc()">&times;</span>
+        <div class="modal_body">
+            <div class="form_inline form_calc">
+            <label class="result" id="result" for="">{{result}}</label>
+            <div class="keyboard">
+              <div class="numbers_operators">
+                <div class="white_space"></div>
+                <button class="operator" id="division" (click)="show_division()">÷</button>
+                <button class="operator" id="multiply" (click)="show_multiply()">x</button>
+                <button class="btn_number" id="n1" (click)="show_n1()">1</button>
+                <button class="btn_number" id="n2"(click)="show_n2()">2</button>
+                <button class="btn_number" id="n3" (click)="show_n3()">3</button>
+                <button class="btn_number" id="n4" (click)="show_n4()">4</button>
+                <button class="btn_number" id="n5" (click)="show_n5()">5</button>
+                <button class="btn_number" id="n6" (click)="show_n6()">6</button>
+                <button class="btn_number" id="n7" (click)="show_n7()">7</button>
+                <button class="btn_number" id="n8" (click)="show_n8()">8</button>
+                <button class="btn_number" id="n9" (click)="show_n9()">9</button> 
+                <div class="white_space"></div>
+                <button class="btn_number" id="n0" (click)="show_n0()">0</button>
+                <button class="btn_number" (click)="show_coma()" id="coma">.</button> 
+              </div>
+              <div class="operators">
+                  
+                <button class="operator" id="clean" (click)="clean()"><img class="backspace" src="./assets/icon/png/backspace.png" alt="" srcset=""></button>
+                <button class="operator" id="plus" (click)="show_add()">+</button>
+                <button class="operator" id="minus" (click)="show_substract()">-</button>
+                <button class="equal" id="equal"(click)="show_result()">=</button> 
+              </div>
+             
+            </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- <div class="tab_titles">
+    <div class="tab_head" id=`tab_title{{item.id}}` *ngFor="let item of list" (click)="getItemId(item)">{{item.title}}</div>
+    <div class="tab_head" (click)="addNewTab()">Add New Tab</div>
+  </div> -->
+
+
+  <div class="content_check_detail" id="content_check_detail">
+   
+    <div (click)="getCategories()">
+        <img  id="arrowDown" class="arrowDownDark" src="./assets/icon/png/arrowDownDark.png">
+    </div>
+      
+    
+
+    <div class="heads" id="heads">    
+      <div class="head" *ngFor="let item of check_list" (click)="getCheckById(item.id)">
+        <input readonly class="check_name" type="text" id="tab_{{item.id}}" (dblclick)="double_click_tab(item.id)" (click)="getSelectedCheckID(item.id)" placeholder="{{item.id}}">
+      </div>
+      <div class="new_head" (click)="addNewCheckDetail()">
+          <img class="addGrayIcon" src="./assets/icon/png/addGrayIcon.png">
+      </div>
+    </div>
+      
+    <app-check-detail class="active check-detail-component" *ngFor="let item of check_list" id="{{item.id}}" [product]="parentProduct" [itemID]="item.id" [checkDetailID]="checkDetailID"
+    [update_Detail]="update_Detail" [modifiersList] = modifiersList>
+    </app-check-detail>
+
+  </div>
